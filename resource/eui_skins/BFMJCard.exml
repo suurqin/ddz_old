@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BFMJCardSkin" width="81" height="118" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="162d33064e4" ></w:Config>
+	<e:Group width="81" height="118" x="0" y="0">
+		<e:Image id="cardbg" width="81" height="118" x="40.5" anchorOffsetX="40.5" anchorOffsetY="59" scaleX="1" scaleY="1" top="0" source="sendcard1_png"/>
+		<e:Image id="cardfront" width="65" height="101" scaleX="0.95" horizontalCenter="0" scaleY="0.9" x="10" top="0" source=""/>
+	</e:Group>	
+</e:Skin>

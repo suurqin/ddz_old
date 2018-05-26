@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MJBubbleSkin" width="400" height="200" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="162e0c4a32f" ></w:Config>
+	<e:Group x="0" y="0">
+		<e:Image id="msgBubblebg" anchorOffsetX="0" anchorOffsetY="0" minHeight="55" minWidth="42" scaleX="1" scaleY="1" fillMode="scale" left="0" top="0" maxWidth="450" width="100%" height="55" maxHeight="55" scale9Grid="18,8,5,36" source=""/>
+		<e:Label id="msgText" text="" x="15" wordWrap="false" size="30" y="10"/>
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

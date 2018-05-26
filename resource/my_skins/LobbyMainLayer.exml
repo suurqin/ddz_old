@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LobbyMainLayerSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="162bcd1cc03" ></w:Config>
+	<e:Group id="basis_group" width="1280" height="720" verticalCenter="0" horizontalCenter="0">
+		<e:Image id="bg_pic" width="1280" height="720" x="0" y="0" source="loobyBg_png"/>
+		<e:Image id="head_pic" width="74" height="74" y="10" anchorOffsetX="0" anchorOffsetY="0" fillMode="scale" x="13" source="RightFlag_png"/>
+		<e:Image id="head_rim" width="84" height="84" x="8" y="5" source="headRim_png"/>
+		<e:Label id="name_label" text="我的昵称" x="92" y="22" anchorOffsetX="0" width="95" fontFamily="KaiTi" size="20" textAlign="center" maxHeight="50" maxWidth="120" textColor="0xffffff"/>
+		<e:Label id="myId_label" text="ID:" x="92" y="44" fontFamily="KaiTi" size="22" textColor="0xf8f3be" width="120"/>
+		<e:Label id="card_num_label" text="0" x="279" y="36" textColor="0xf8f3be" size="22" fontFamily="KaiTi" width="80" textAlign="center" maxHeight="30" maxWidth="80"/>
+		<e:Label id="coin_num_label" text="0" x="463" y="36" size="22" fontFamily="KaiTi" textColor="0xf8f3be" textAlign="center" width="80" maxHeight="30" maxWidth="80"/>
+		<e:Label id="gold_num_label" text="0" x="652" y="36" textColor="0xf8f3be" size="22" fontFamily="KaiTi" width="70" textAlign="center" maxHeight="30" maxWidth="70"/>
+	</e:Group>
+	<e:Group id="entrance_group" width="1040" height="530" y="114" x="95.33">
+		<e:Button id="creat_room_button" label="" y="8.000000000000071" enabled="true" scaleX="1" scaleY="1" left="7" name="creat_room_button">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="createroom_png" source.down="createroom2_png" source.disabled="createroom_png" x.down="28"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="enter_room_button" label="" anchorOffsetX="0" scaleX="1" scaleY="1" left="-7" top="17" name="enter_room_button">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="addroom_png" source.down="addroom2_png" source.disabled="addroom_png" x.down="16.04" y.down="-0.35" fillMode.down="clip"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="ddz_gold_button" label="" scaleX="1" scaleY="1" right="5" top="53" name="ddz_gold_button">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="doudizhu_png" source.down="doudizhu2_png" source.disabled="doudizhu_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="mj_gold_button" label="" scaleX="1" scaleY="1" right="-1" bottom="2" name="mj_gold_button">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="majiang_png" source.down="majiang2_png" source.disabled="majiang_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Group id="buttons_down_group" width="1280" height="100" horizontalCenter="0" bottom="0">
+		<e:Button id="set_button" label="" x="978" y="118">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="setCreatLayer_png" source.down="setCreatLayer2_png" source.disabled="setCreatLayer2_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="help_button" label="" x="784" y="86">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="help_png" source.down="help2_png" source.disabled="help2_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="record_button" label="" x="708" y="48">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="record_png" source.down="record2_png" source.disabled="record2_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="share_button" label="" x="956" y="118">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="share_png" source.down="share2_png" source.disabled="share2_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="shop_button" label="" x="986" y="42">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="shop_png" source.down="shop2_png" source.disabled="shop2_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:layout>
+		<e:HorizontalLayout horizontalAlign="center" verticalAlign="bottom" paddingLeft="100" paddingRight="100" paddingBottom="15" paddingTop="0" gap="70"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

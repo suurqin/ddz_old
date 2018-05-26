@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WaitingRoom" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="waitGroup" width="1280" height="720" x="0" y="0">
+		<e:Image width="1280" height="720" y="0" x="0" source="roombg_png"/>
+		<e:Label id="roomID" text="152264号房间" x="27" y="29.5" size="35"/>
+
+		<e:Button id="dislutionRoomBtn" label="" x="720" y="466" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="dislution_png" source.down="dislution2_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="inviteBtn" label="" x="327" y="466" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="WXinvite_png" source.down="WXinvite2_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group width="90" height="150" x="1162" y="14">
+			<e:Button id="waitRmBackBtn" label="" height="40" y="5" horizontalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="roomback_png" x="-1.6" y="0.4"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="waitRmVoiceBtn" label="" y="57" height="40" horizontalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="voice_png" source.down="novoice_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+
+			</e:Button>
+			<e:Button id="waitRmChatBtn" label="" y="107" horizontalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="chat_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="wOpPlayer" width="210" height="89" x="495" y="20">
+			<e:Image width="139" height="67" x="69" y="20" source="horbg_png"/>
+			<e:Image width="89" height="89" x="0" y="0" source="photoframe2_png"/>
+			<e:Image id="wOpPhoto" width="89" height="89" x="0" y="0"/>
+			<e:Image width="89" height="89" x="0" y="0" source="photoframe_png" touchEnabled="false"/>
+			<e:Label id="wOpID" text="" y="33" horizontalCenter="50.5" size="18"/>
+			<e:Label id="wOpjifen" text="" y="60" horizontalCenter="50.5" size="18" textColor="0xffff00"/>
+			<e:Image width="24" height="24" x="93" y="57" source="jifen_png" visible="false"/>
+		</e:Group>
+		<e:Group id="wUpPlayer" width="89" height="168" x="204" y="224">
+			<e:Image width="87" height="154" x="0" y="12" source="verbg_png"/>
+			<e:Image width="89" height="89" x="0" y="0" source="photoframe2_png"/>
+			<e:Image id="wUpPhoto" width="89" height="89" x="0" y="0"/>
+			<e:Image width="89" height="89" x="0" y="0" source="photoframe_png" touchEnabled="false"/>
+			<e:Label id="wUpID" text="" y="102" horizontalCenter="0" size="18"/>
+			<e:Label id="wUpjifen" text="" y="134" size="18" textColor="0xffff00" horizontalCenter="10"/>
+			<e:Image width="24" height="24" x="0" y="131" source="jifen_png" visible="false"/>
+		</e:Group>
+		<e:Group id="wMyPlayer" width="210" height="89" x="495" y="598" anchorOffsetX="0">
+			<e:Image width="139" height="67" x="69" y="20" source="horbg_png"/>
+			<e:Image width="89" height="89" x="0" y="0" source="photoframe2_png"/>
+			<e:Image id="wMyPhoto" width="89" height="89" x="0" y="0"/>
+			<e:Image width="89" height="89" x="0" y="0" source="photoframe_png" touchEnabled="false"/>
+			<e:Label id="wMyID" text="" y="33" size="18" textColor="0xffffff" anchorOffsetY="0" horizontalCenter="50.5" height="18"/>
+			<e:Label id="wMyjifen" text="" y="60" size="18" textColor="0xffff00" horizontalCenter="50.5"/>
+			<e:Image width="24" height="24" x="93" y="57" source="jifen_png" visible="false"/>
+		</e:Group>
+		<e:Group id="wDnPlayer" width="89" height="168" x="1008" y="224">
+			<e:Image width="87" height="154" x="2" y="12" source="verbg_png"/>
+			<e:Image width="89" height="89" x="0" y="0" source="photoframe2_png"/>
+			<e:Image id="wDnPhoto" width="89" height="89" x="0" y="0"/>
+			<e:Image width="89" height="89" x="0" y="0" source="photoframe_png" touchEnabled="false"/>
+			<e:Label id="wDnID" text="" y="102" size="18" horizontalCenter="0"/>
+			<e:Label id="wDnjifen" text="" y="134" size="18" horizontalCenter="10" textColor="0xffff00"/>
+			<e:Image width="24" height="24" x="0" y="131" source="jifen_png" visible="false"/>
+		</e:Group>
+
+
+
+	</e:Group>
+</e:Skin>

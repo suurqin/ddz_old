@@ -1,0 +1,529 @@
+package com.proto.msg;
+
+//游戏服向中心服请求创建新用户cmd:0xd40200 
+message CreateUserMsg{
+    optional string account = 1;
+    optional string machine_code = 2;
+    optional string qqOpenID = 3;
+    optional string wxOpenID = 4;
+    optional string playerName = 5;
+    optional string playerID = 6;
+    optional string password = 7;
+    optional int64 sessionID = 8;
+    optional string serverID = 9;
+    optional int32 playerIndex = 10;
+    optional int32 deviceFlag = 11;
+    optional int32 msgCMD = 12;
+}
+
+//游戏服向中心服请求创建新用户返回cmd:0xd40201 
+message CreateUserMsgAck{
+    optional string account = 1;
+    optional string machine_code = 2;
+    optional string qqOpenID = 3;
+    optional string wxOpenID = 4;
+    optional string playerName = 5;
+    optional string playerID = 6;
+    optional string password = 7;
+    optional int64 sessionID = 8;
+    optional int32 result = 9;
+    optional int32 playerIndex = 10;
+    optional int32 deviceFlag = 11;
+    optional int32 msgCMD = 12;
+}
+
+//游戏服向中心服请求查找用户cma:0xd40202
+message FindPlayerMsg{
+    optional string account = 1;
+    optional int32 msgCMD = 2;
+}
+
+//游戏服向中心服请求查找用户返回cma:0xd40203
+message FindPlayerMsgAck{
+    optional int32 result = 1;
+    optional int32 msgCMD = 2;
+}
+
+//游戏逻辑服向中心服务器提交信息cmd:0xd40003
+message GameLogicServerUpdateMsg{
+    optional string serverID = 1;
+    optional int32 linkNum = 2;
+    optional int32 r0Nnum = 3;
+    optional int32 r1Nnum = 4;
+    optional int32 r2Nnum = 5;
+    optional int32 r3Nnum = 6;
+    optional int32 r4Nnum = 7;
+    optional int32 msgCMD = 8;
+}
+
+//客户端向中心服务器请求逻辑服地址 cmd 0xd40100
+message GetGameServerInfoMsg{
+    optional string account = 1;
+    optional string machine_code = 2;
+    optional string qqOpenID = 3;
+    optional string wxOpenID = 4;
+    optional int32 clientType = 5;
+    optional string unionId = 6;
+    optional int32 msgCMD = 7;
+}
+
+//客户端向中心服务器请求逻辑服地址返回 cmd 0xd40101
+message GetGameServerInfoMsgAck{
+    optional string serverID = 1;
+    optional string telecomIP = 2;
+    optional string unicomIP = 3;
+    optional int32 gamePort = 4;
+    optional int32 patchPort = 5;
+    optional int32 msgCMD = 7;
+}
+
+//游戏逻辑服向中心服务器进行注册cmd:0xd40001
+message RegisterGameLogicServerMsg{
+    optional string serverID = 1;
+    optional string serverName = 2;
+    optional string telecomIP = 3;
+    optional string unicomIP = 4;
+    optional int32 gamePort = 5;
+    optional int32 patchPort = 6;
+    optional int32 msgCMD = 7;
+}
+
+//游戏逻辑服向中心服务器进行注册返回cmd:0xd40002
+message RegisterGameLogicServerMsgAck{
+    optional string serverID = 1;
+    optional int32 msgCMD = 2;
+}
+
+//购买大礼包返回 cmd:0xc30018
+message BuyBigGiftPackAckMsg{
+    optional int32 total_gold = 1;
+    optional int32 got_gold = 2;
+    optional int32 result = 3;
+    optional int32 reason = 4;
+    optional int32 msgCMD = 5;
+}
+
+//创建vip房间 cmd 0xc30100 ************
+message CreateVipRoomMsg{
+    optional int32 quanNum= 1;
+    optional string psw = 2;
+    optional int32 roomID= 3;
+    optional int32 maxPieType = 4;
+    optional int32 cardCounting = 5;
+    optional int32 msgCMD = 6;
+}
+
+//斗地主牌牌桌内行为 cmd:0xc31001
+message DDZGameOpertaionMsg{
+    optional int32 opertainID = 1;
+    repeated int32 cards = 2;
+    optional int32 callPoint = 3;
+    optional int32 doublePoint = 4;
+    optional int32 msgCMD = 5;
+}
+
+//斗地主牌牌桌内行为返回 cmd:0xc31002
+message DDZGameOpertaionAckMsg{
+    optional string playerID = 1;
+    optional int32 opertaionID = 2;
+    repeated int32 cards = 3;
+    repeated int32 self_cards = 4;
+    optional int32 tablePos = 5;
+    optional int32 callPoint = 6;
+    optional int32 multiPie = 7;
+    optional int32 playerIndex = 8;
+    optional int32 gold = 9;
+    repeated int32 player0Card = 10;
+    repeated int32 player1Card = 11;
+    repeated int32 player2Card = 12; 
+    optional int32 player0Size = 13;
+    optional int32 player1Size = 14;
+    optional int32 player2Size = 15;
+    optional int32 winGold0 = 16;
+    optional int32 winGold1 = 17;
+    optional int32 winGold2 = 18;
+    repeated int32 winnerPos = 19;
+    repeated int32 losePos = 20;
+    optional int32 isSpring = 21;
+    optional int32 isBright = 22;
+    optional int32 bombCount = 23;
+    
+    optional int32 gameState = 24;
+    repeated int32 brightPos = 25;
+    optional int32 lordPos = 26;
+    optional int32 curreOpIndex = 27;
+    optional int32 lastPushPos = 28;
+    repeated int32 lastPushCard = 29;
+    optional int32 doublePie = 30;
+    optional int32 pieData = 31;
+    optional int32 quanCount = 32;
+    optional int32 double_follow = 33;
+    optional int32 double_pie_count = 34;
+    repeated int32 countingCards = 35;
+    optional int32 totalNum = 36;
+    optional int32 maxPie = 37;
+    optional int32 cardCounting = 38;
+    optional int32 player0TongCount = 39;
+    optional int32 player1TongCount = 40;
+    optional int32 player0BaoCount = 41;
+    optional int32 player1BaoCount = 42;
+    optional int32 player0AllScore = 43;
+    optional int32 player1AllScore = 44;
+    optional int32 winScore0 = 45;
+    optional int32 winScore1 = 46;
+    optional int32 roundScore0 = 47;
+    optional int32 roundScore1 = 48;
+    optional int32 msgCMD = 49;
+}
+
+//进入vip房间 cmd 0xc30102
+message EnterVipRoomMsg{
+    optional string tableID=1;
+    optional string psw = 2;
+    optional int32 roomID=3;
+    optional int32 msgCMD = 4;
+}
+
+//牌局开始 cmd 0xc30060
+message GameStartMsg{
+    optional int32 myTablePos=1;
+    repeated int32 myCards=2;
+    optional int32 chuCardPlayerIndex=3; 
+    optional int32 player0Gold=4;
+    optional int32 player1Gold=5;
+    optional int32 player2Gold=6;
+    optional int32 serviceGold=7;      
+    optional int32 playerOperationTime = 8;
+    optional int32 msgCMD = 9;
+}
+
+//客户端通知游戏服务器，玩家得分进展 cmd:0xc30007
+message GameUpdateMsg{
+    optional int32 score = 1;
+    optional string playerName = 2;
+    optional int32 taskDateType = 3;
+    optional int32 taskTouchNum = 4;
+    optional int32 gameMaxCombo = 5;
+    optional int32 maxComboNum = 6;
+    optional int32 msgCMD = 7;
+}
+
+//地区登录标记 cmd:0xc32000
+message LocationMsg{
+    optional int32 location_id = 1;
+    optional int32 msgCMD = 2;
+}
+
+//玩家申请解散房间 cmd:0xc30225
+message PlayerAskCloseVipRoomMsg{
+    optional int32 opertain_id = 1;
+    optional int32 table_id = 2;
+    optional int32 player_id = 3;
+    optional int32 agree = 4;
+    optional int32 msgCMD = 5;
+}
+
+//玩家申请解散房间返回 cmd:0xc30226 
+message PlayerAskCloseVipRoomMsgAck{
+    optional int32 opertaion_id = 1;
+    optional string askerName = 2;
+    optional int32 table_id = 3;
+    optional int32 agree_num = 4;
+    optional int32 msgCMD = 5;
+}
+
+//获取短信验证码cmd:0xc30326  ************
+message PlayerBindPhoneNumber{
+    optional string phone_number = 1;
+    optional string comfirm_code = 2;
+    optional string identify_card = 3;
+    optional string wx_num = 4;
+    optional string qq_num = 5;
+    optional string name = 6;
+    optional string birthday = 7;
+    optional string player_address = 8;
+    optional int32 msgCMD = 9;
+}
+
+//获取短信验证码返回cmd:0xc30327 ***********
+message PlayerNeedBindPhoneNumberAck{
+    optional int32 msgCMD = 1;
+}
+
+
+//客户端通知游戏服务器，玩家的某些行为 cmd:0xc30008 
+message PlayerGameOpertaionMsg{
+    optional int32 opertainID = 1;
+    optional int32 opValue = 2;
+    optional int32 msgCMD = 3;
+}
+
+//客户端通知游戏服务器，玩家的某些行为返回 cmd:0xc30009 
+message PlayerGameOpertaionAckMsg{
+    optional string playerID = 1;
+    optional string playerName = 2;
+    optional string targetPlayerName = 3;
+    optional int32 opertainID = 4;
+    optional int32 opValue = 5;
+    optional int32 result = 6;
+    optional int32 playerIndex = 7;
+    optional int32 headImg = 8;
+    optional int32 sex = 9;
+    optional int32 gold = 10;
+    optional int32 tablePos = 11;
+    optional int32 canFriend = 12;
+    optional string ip = 13;
+    optional int32 cardCountingDay = 14;
+    optional int32 gameScore = 15;
+    optional int32 msgCMD = 16;
+}
+
+//玩家发送一个操作给服务器，带一个字符串 cmd 0xc30002
+message PlayerOpertaionMsg{
+    optional int32 gold=1;
+    optional int32 diamond=2;
+    optional int32 score=3;
+    optional int32 wons=4;
+    optional int32 loses=5;
+    optional int32 escape=6;
+    optional int32 life=7;
+    optional int32 serverCD=8;
+    optional int32 msgCMD =9;
+}
+
+// 提醒玩家进行操作 cmd 0xc30061
+message PlayerOperationNotifyMsg{
+    optional int32 operation=1;
+    optional int32 player_table_pos=2;
+    optional int64 overTime=3;
+    optional int32 target_card=4;
+    optional int32 msgCMD = 5;
+}
+
+// 客户端发给服务器的玩家在牌桌上的操作行为 cmd 0xc30062
+message PlayerTableOperationMsg{
+    optional int32 operation=1;
+    optional int32 player_table_pos=2;
+    optional int32 card_value=3;
+    optional int32 opValue=4;
+    optional int32 cardLeftNum=5;
+    repeated int32 handCards=6;     
+    repeated int32 beforeCards=7;
+    repeated int32 downCards=8;
+    optional int32 msgCMD = 9;
+}
+
+//开始游戏 cmd 0xc30003
+message RequestStartGameMsg{
+    optional int32 roomID = 1;
+     optional int32 msgCMD = 2;
+}
+
+//开始游戏返回 cmd 0xc30004
+message RequestStartGameMsgAck{
+    optional int32 result = 1;
+    optional int32 gold = 2;
+    optional int32 roomID = 3;
+    optional int32 tablePos = 4;
+    optional int32 vipTableID = 6;
+    optional string creatorName = 7;
+    optional string tablePassword = 8;
+    repeated SimplePlayer players = 9;
+    optional int64 vipOverTime = 10;
+    optional int32 gameState = 11;
+    optional int32 totalNum = 12;
+    optional int32 msgCMD = 13;
+}
+
+//查找vip房间返回 cmd 0xc30101
+message SearchVipRoomMsgAck{
+    optional int32 vipTableID=1;
+    optional int32 numPlayer=2;
+    optional string psw = 3;
+    optional string tableID=4;
+    optional string createName=5;
+    optional int32 dizhu=6;
+    optional int32 minGold=7;
+    optional int32 msgCMD = 18;
+}
+
+//游戏中聊天 cmd:0xc30300
+message TalkingInGameMsg{
+    optional int32 playerPos = 1;
+    optional int32 playerSex = 2;
+    optional int32 msgType = 3;
+    optional int32 msgNo = 4;
+    optional string msgText = 5;
+    optional int32 msgCMD = 6;
+}
+
+//三打一牌牌桌内行为 cmd:0xc31003
+message ThreeOneGameOpertaionMsg{
+    optional int32 opertaionID = 1;
+    repeated int32 cards = 2;
+    optional int32 callPoint = 3;
+    optional int32 color = 4;
+    optional int32 msgCMD = 5;
+}
+
+//三打一牌牌桌内行为返回 cmd:0xc31004
+message ThreeOneGameOpertaionAckMsg{
+    optional string playerID = 1;
+    optional int32 opertaionID = 2;
+    optional int32 color = 3;
+    repeated int32 cards = 4;
+    optional int32 tablePos = 5;
+    optional int32 callPoint = 6;
+    optional int32 gold = 7;
+    optional int32 score = 8;
+    optional int32 scoreTotal = 9;
+    optional int32 winType = 10;
+    optional int32 firstCallPointPos = 11;
+    repeated int32 player0Card = 12;
+    repeated int32 player1Card = 13;
+    repeated int32 player2Card = 14;
+    repeated int32 player3Card = 15;
+    optional int32 winGold0 = 16;
+    optional int32 winGold1 = 17;
+    optional int32 winGold2 = 18;
+    optional int32 winGold3 = 19;
+    optional bool isZhuangWin = 20;
+    optional int32 gameState = 21;
+    optional int32 zhuangPos = 22;
+    optional int32 curreOpIndex = 23;
+    optional int32 floorCard = 24;
+    repeated int32 playerCardCounts = 25;
+    optional int64 quanCount = 26;
+    optional int32 msgCMD = 27;
+}
+
+//服务器通知客户端更新整个道具列表 cmd:0xc30017
+message UpdatePlayerItemListMsg{
+    optional int32 gold = 1;
+    repeated int32 items = 2;
+    optional int32 msgCMD = 3;
+}
+
+//服务端返回给客户端，通知客户端更新一个属性 cmd:0xc30016
+message UpdatePlayerOnePropertyMsg{
+    optional int32 which_property = 1;
+    optional int32 value = 2;
+    optional int32 r1Num = 3;
+    optional int32 r2Num = 4;
+    optional int32 r3Num = 5;
+    optional int32 r4Num = 6;
+    optional int32 msgCMD = 7;
+}
+
+// cmd:0xc30002 重复
+
+//消耗道具开启vip 一把记牌器cmd:0xc30114 **************
+message UseCardCountingMsg{
+    optional int32 msgCMD = 1;
+}
+
+//消耗道具开启vip 一把记牌器返回cmd:0xc30114 **************
+message UseCardCountingAckMsg{
+    optional int32 message = 1;
+    optional int32 msgCMD = 2;
+}
+
+//客户端请求获取玩家指定VIP房间记录中的所有游戏记录 cmd:0xc30065
+message VipGameRecordMsg{
+    optional string roomID = 1;
+    optional string date = 2;
+    optional int32 msgCMD = 3;
+}
+
+//客户端请求获取玩家指定VIP房间记录中的所有游戏记录 返回 cmd:0xc30066
+message VipGameRecordAckMsg{
+    repeated VipGameRecord gameRecords = 1;
+    optional int32 msgCMD = 2;
+}
+
+// vip房间结束 cmd 0xc30200
+message VipRoomCloseMsg{
+    optional int32 paoPos = 1;
+    optional int32 winPos = 2;
+    repeated SimplePlayer players=3;
+    optional int32 msgCMD = 6;
+}
+
+//玩家所有VIP房间记录列表 cmd:0xc30063
+message VipRoomRecordMsg{
+    optional string playerID = 1;
+    optional int32 msgCMD = 2;
+}
+
+//玩家所有VIP房间记录列表 返回 cmd:0xc30064
+message VipRoomRecordAckMsg{
+    repeated VipRoomRecord roomRecords = 1;
+    optional int32 msgCMD = 2;
+}
+
+
+message SimplePlayer{
+    optional string playerID = 1;
+    optional string playerName = 2;
+    optional int32 headImg = 3;
+    optional int32 sex = 4;
+    optional int32 palyerIndex = 5;
+    optional int32 gold = 6;
+    optional int32 tablePos = 7;
+    optional string desc = 8;
+    optional int32 gameResult = 10;
+    optional int32 canFriend = 11;
+    optional int32 inTable = 12;
+    optional int32 zhuangCount = 13;
+    optional int32 winCount = 14;
+    optional int32 winGoldNum = 15;
+    optional string ip = 16;
+}
+
+message VipGameRecord{
+    optional string roomID = 1;
+    optional int32 gameID = 2;
+    optional string playerID = 3;
+    optional string playerName = 4;
+    optional int32 gameType1 = 5;
+    optional int32 handIndex = 6;
+    optional int64 gameScore = 7;
+    optional string recordDate = 8;
+    optional int32 table_type = 9;
+}
+
+message VipRoomRecord{
+    optional string roomID = 1;
+    optional int32 roomIndex = 2;
+    optional string player1ID = 3;
+    optional int64 score1 = 4;
+    optional string player2ID = 5;
+    optional int64 score2 = 6;
+    optional string player3ID = 7;
+    optional int64 score3 = 8;
+    optional string player4ID = 9;
+    optional int64 score4 = 10;
+    optional string hostName = 11;
+    optional string startTime = 12;
+    optional string endTime = 13;
+    optional int32 table_type = 14;
+    optional int32 count = 15;
+}
+
+
+
+//---------------神奇的分割线-------------------
+//---------------移动的分割线-------------------
+
+
+//换名字返回 cmd:0xc30022 没调用
+
+//换性别返回 cmd:0xc30025 没调用 
+
+
+//---------------神奇的分割线-------------------
+
+
+
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DDZPlayerInfo" width="230" height="210" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Group id="ddz_player_info" width="230" height="210" x="0" y="0" anchorOffsetX="0">
+		<e:Image id="ddz_player_icon" width="100" height="100" x="64" y="45" source="logo6_png"/>
+		<e:Image id="ddz_flag_farmer_l" width="67" height="95" x="-5" y="52" source="ddz_flag_farmer_l_png"/>
+		<e:Image id="ddz_flag_dz_l" width="67" height="95" x="-5" y="49" source="ddz_flag_dz_l_png"/>
+		<e:Image id="ddz_flag_farmer_r" width="67" height="95" x="161" y="52" source="ddz_flag_farmer_r_png"/>
+		<e:Image id="ddz_flag_dz_r" width="67" height="95" x="168" y="49" source="ddz_flag_dz_r_png"/>
+		<e:Image id="ddz_player_common_nm" width="130" height="131" x="50" y="33" source="ddz_player_common_nm_png"/>
+		<e:Image id="ddz_player_common_dz" width="130" height="131" x="50" y="33" source="ddz_player_common_dz_png"/>
+		<e:Image id="ddz_player_common" width="130" height="131" x="50" y="33" source="ddz_player_common_png"/>
+		<e:Label id="ddz_player_info_name" text="爱抹茶的多肉" x="0" y="162" width="230" verticalAlign="middle" textAlign="center" size="20" bold="true" textColor="0x5aff26" height="20"/>
+		<e:Label id="ddz_player_info_gold" text="465421" x="0" y="184" size="20" border="false" width="230" verticalAlign="middle" textAlign="center" textColor="0xf9df22" bold="true" height="20"/>
+			<e:Group id="ddz_card_num_l_group" width="64" height="44" x="180" y="50" anchorOffsetX="0">
+				<e:Image id="ddz_card_num_bg_l" width="31" height="44" x="0" y="0" source="ddz_card_num_bg_png" scaleX="1" scaleY="1"/>
+				<e:Label id="ddz_card_num_l" text="20" x="32" y="0" height="44" size="28" verticalAlign="middle" textAlign="right"/>
+			</e:Group>
+			<e:Group id="ddz_card_num_r_group" width="64" height="44" x="-18" y="50">
+				<e:Image id="ddz_card_num_bg_r" width="31" height="44" x="33" y="0" source="ddz_card_num_bg_png" scaleX="1" scaleY="1"/>
+				<e:Label id="ddz_card_num_r" text="20" x="0" y="0" height="44" textAlign="left" size="28" verticalAlign="middle"/>
+			</e:Group>
+			<e:Image id="ddz_hat_dz" width="88" height="68" x="115" y="40" source="ddz_hat_dz_png" anchorOffsetX="44" anchorOffsetY="34"/>
+			<e:Group id="ddz_chat_bubble_group_r" width="177" height="103" x="-125" y="105">
+				<e:Image id="ddz_chat_bubble_r" width="177" height="103" x="0" y="0" source="ddz_chat_bubble_r_png" scaleX="1" scaleY="1"/>
+				<e:Label id="ddz_chat_bubble_lable_r" text="不出" x="0" y="20" scaleX="1" scaleY="1" size="40" bold="true" width="177" verticalAlign="middle" textAlign="center"/>
+			</e:Group>
+			<e:Group id="ddz_chat_bubble_group_l" width="177" height="103" x="178" y="105">
+				<e:Image id="ddz_chat_bubble_l" width="177" height="103" x="0" y="0" source="ddz_chat_bubble_l_png" scaleX="1" scaleY="1"/>
+				<e:Label id="ddz_chat_bubble_lable_l" text="不出" x="0" y="20" scaleX="1" scaleY="1" size="40" bold="true" width="177" verticalAlign="middle" textAlign="center" textColor="0xffffff"/>
+			</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,217 @@
+package com.proto.msg;
+//购买大礼包返回 cmd 0xc30018
+message BuyBigGiftPackAckMsg{
+    optional int32 total_gold = 1;
+    optional int32 got_gold = 2;
+    optional int32 result = 3;
+    optional int32 reason = 4;
+    optional int32 item_id = 5;
+    optional int32 item_num = 6;
+    optional int32 msgCMD = 7;
+}
+
+//获得宝箱 cmd 0xc30607
+message GetBaoXiangMsg{
+    optional int32 msgCMD = 1;
+}
+
+//获得宝箱返回 cmd 0xc30608
+message GetBaoXiangMsgAck{
+    optional int32 result = 1;
+    repeated BaoXiang baoXiangList = 2;
+    optional int32 msgCMD = 3;
+}
+//获得宝箱返回 cmd 0xc30608
+message BaoXiang{
+    optional int32 id = 1;
+    optional int32 type = 2;
+    optional string item_name = 3;
+    optional int32 amount = 4;
+    optional int32 percentage= 5;
+}
+//请求乐币兑换 cmd 0xc30303
+message LeBiDuiHuanMsg{
+    optional int32 itemBaseId = 1;
+    optional int32 num = 2;
+    optional int32 msgCMD = 3;
+}
+//回应乐币兑换 cmd 0xc30304
+message LeBiDuiHuanMsgAck{
+    optional int32 result = 1;
+    optional int32 msgCMD = 2;
+}
+
+//开宝箱 cmd 0xc30610
+message OpenBaoXiangMsgAck{
+    optional int32 result = 1;
+    optional int32 id = 2;
+    optional int32 itemId = 3;
+    optional int32 count = 4;
+    optional string itemName = 5;
+    optional int32 msgCMD = 6;
+}
+
+// 玩家宝箱 cmd 0xc30153
+message PlayerBaoXiangMsgAck{
+    optional int32 baoXiangType = 1;
+    optional int32 itemID = 2;
+    optional string itemName = 3;
+    optional int32 amount = 4;
+    optional int32 msgCMD = 5;
+}
+
+//玩家绑定手机号 cmd 0xc30326
+message PlayerBindPhoneNumber{
+    optional string phone_number = 1;
+    optional string comfirm_code = 2;
+    optional string identify_card = 3;
+    optional string wx_num = 4;
+    optional string qq_num = 5;
+    optional string name = 6;
+    optional string birthday = 7;
+    optional string player_address = 8;
+    optional int32 msgCMD = 9;
+}
+//服务器通知客户端更新整个道具列表 cmd 0xc30017
+message UpdatePlayerItemListMsg{
+    optional int32 gold = 1;
+    repeated int32 items=2;
+    optional int32 msgCMD = 3;
+}
+//客户端通过串码提取道具道具列表 cmd 0xc30411
+message PlayerImeiGetCardMsg{
+    optional int32 playerIndex = 1;
+    optional string imeiCard = 2;
+    optional int32 msgCMD = 3;
+}
+//玩家需要绑定手机号 cmd 0xc30412
+message PlayerNeedBindPhoneNumberAck{
+    optional int32 msgCMD = 1;
+}
+
+
+//更新服相关消息 cmd 0xb20004
+message GetPatchFileAckMsg{
+    optional int32 fileIndex = 1;
+    optional int32 pageIndex = 2;
+    optional int32 data_offset = 3;
+    optional int32 data_size = 4;
+    repeated int32 bytes = 5;
+    optional int32 msgCMD = 6;
+
+}
+
+
+//更新服相关消息 cmd 0xb20002
+message GetPatchFileListAckMsg{
+    optional string centerTelecomIP = 1;
+    optional string centerUnicomIP = 2;
+    optional int32 centerPort = 3;
+    optional int32 patchVersion = 4;
+    repeated GamePatchFile files = 5;
+    optional int32 msgCMD = 6;
+
+}
+
+//更新服相关消息 
+message GamePatchFile{
+    optional string name = 1;
+    optional int32 file_size = 2;
+    optional int32 file_compressed_size = 3;
+    optional int32 pageNum = 4;
+
+}
+//更新服相关消息 cmd 0xb20001
+message GetPatchFileListMsg{
+    optional int32 clientVersion = 1;
+    optional int32 msgCMD = 2;
+
+}
+//更新服相关消息 0xb20003
+message GetPatchFileMsg{
+    optional int32 patchVersion = 1;
+    optional int32 fileIndex = 2;
+    optional int32 pageIndex = 3;
+    optional int32 msgCMD = 4;
+
+}
+//更新服相关消息 cmd 0xb20007
+message GetPatchVersionAckMsg{
+    optional int32 patchVersion = 1;
+    optional int32 isStrongUpdate = 2;
+    optional string androidUrl = 3;
+    optional string iosUrl = 4;
+    optional int32 msgCMD = 5;
+
+}
+//更新服相关消息 cmd 0xb20006
+message GetPatchVersionMsg{
+    optional int32 platformType = 1;
+    optional int32 msgCMD = 2;
+
+}
+//服务信息 cmd 0xc30723
+message ServerInfoMsg{
+    optional string serverId = 1;
+    optional string ip = 2;
+    optional int32 port = 3;
+    optional string serverType = 4;
+    optional int32 msgCMD = 5;
+
+}
+// cmd 0xc300228
+message ShowNoticeOnLoginAck{
+    optional int32 show = 1;
+    optional int32 full_screen = 2;
+    optional int32 show_time = 3;
+    optional int32 delay = 4;
+    optional int32 auto_close = 5;
+    optional int32 msgCMD = 6;
+
+}
+//关闭语音 cmd 0xc30306
+message CloseVipSoundMsgAck{
+    optional int32 isClose = 1;
+    optional int32 msgCMD = 2;
+
+}
+//关闭语音 cmd 0xc30305
+message CloseVipSoundMsg{
+    optional int32 isClose = 1;
+    optional int32 msgCMD = 2;
+
+}
+//其他方式登陆 cmd 0xc30205
+message OtherLoginMsgAck{
+    optional string otherip = 1;
+    optional int32 msgCMD = 2;
+
+}
+//解散房间 cmd 0xc30008
+message PlayerGameOpertaionMsg{
+    optional int32 opertaionID = 1;
+    optional int32 opValue = 2;
+    optional int32 msgCMD = 3;
+
+}
+//解散房间 cmd 0xc30009
+message PlayerGameOpertaionAckMsg{
+    optional string playerID = 1;
+    optional string playerName = 2;
+    optional string targetPlayerName = 3;
+    optional int32 opertaionID = 4;
+    optional int32 opValue = 5;
+    optional int32 result = 6;
+    optional int32 playerIndex = 7;
+    optional int32 headImg = 8;
+    optional int32 gold = 9;
+    optional int32 tablePos = 10;
+    optional int32 sex = 11;
+    optional int32 canFriend = 12;
+    optional string ip = 13;
+    optional string headIconUrl = 14;
+    optional int32 redPacketCount = 15;
+    optional float redPacketMoney= 16;
+    optional int32 msgCMD = 17;
+
+}

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CreatRoomsLayerSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:mySubassemblie="mySubassemblie.*">
+	<w:Config id="1628fb1d730"></w:Config>
+	<e:Group width="1280" height="720" horizontalCenter="0" verticalCenter="0" touchEnabled="false">
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+		<e:Image id="bg_creat_room1" width="1280" height="720" y="0" x="0" source="creatRoomBg_di_png" />
+	</e:Group>
+	<e:Group id="mj_group" width="1280" height="720" verticalCenter="0" horizontalCenter="0" touchEnabled="false"
+	        >
+		<e:Image id="bg_creat_room2" width="1087" height="585" scaleX="1" scaleY="1" fillMode="scale" horizontalCenter="0"
+		         y="100" source="creatRoomBg_png" x="97" />
+		<e:Image id="area_select_flag_image" width="272" height="83" y="136" source="areaSelect_png" x="74" scaleX="1"
+		         scaleY="1" />
+		<e:Scroller id="areas_mj_creat_room_scroll" width="216" height="540" x="117.23999999999998" y="122.72999999999999"
+		            scaleX="1" scaleY="1">
+			<e:Group id="areas_mj_creat_room_group" width="216">
+				<e:layout>
+					<e:VerticalLayout gap="38" paddingLeft="10" paddingTop="25" />
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+		<e:Group id="player_num_select_group" width="616" height="60" x="505.24" y="155.72999999999996" anchorOffsetX="0"
+		         anchorOffsetY="0" scaleX="1" scaleY="1">
+			<e:layout>
+				<e:HorizontalLayout gap="15" paddingLeft="15" paddingTop="6" />
+			</e:layout>
+
+
+
+
+		</e:Group>
+		<e:Group id="ju_num_select_group" width="616" height="60" x="505.24" y="228.72999999999996" anchorOffsetX="0"
+		         anchorOffsetY="0" scaleX="1" scaleY="1">
+			<e:layout>
+				<e:HorizontalLayout gap="15" paddingLeft="15" paddingTop="6" />
+			</e:layout>
+		</e:Group>
+		<e:Scroller id="rules_mj_creat_room_scroll" width="620" height="200" x="505.24" scaleX="1" scaleY="1"
+		            anchorOffsetX="0" anchorOffsetY="0" y="295.73">
+			<e:Group id="rules_mj_creat_room_group">
+				<e:layout>
+					<e:TileLayout orientation="rows" horizontalGap="15" verticalGap="18" paddingLeft="15" paddingRight="5"
+					              paddingTop="10" paddingBottom="10" />
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+		<e:Group id="zy_select_group" width="0" height="0" x="604.8399999999999" y="455.25" scaleX="1" scaleY="1">
+			<e:RadioButton id="bao_zy_select_radioButton" label="" x="-81.42" y="-10.46" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="bao_rule_zy_png" source.down="bao_rule_zy_png" />
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+						<e:Image width="32" height="32" x="7" y="6" source="otherSelect_png" source.disabled="" source.up="" />
+					</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="hui_zy_select_radioButton" label="" x="86.77" y="-10.46" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="hui_rule_zy_png" source.down="hui_rule_zy_png" />
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+						<e:Image width="32" height="32" x="7" y="5.99" source="otherSelect_png" source.up="" source.disabled="" />
+					</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+		</e:Group>
+		<e:CheckBox id="creat_other_room_checkBox" label="" x="380.24" y="516.73" enabled="true" height="44" width="164"
+		            scaleX="1" scaleY="1" name="creat_other_room_checkBox">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="164" height="44" x="0" y="0" source="creatOtherRoomButton_png" />
+					<e:Image width="32" height="32" source="otherSelect_png" x="7" y="6" source.disabled="" source.up=""
+					         source.down="otherSelect_png" />
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+				</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:CheckBox id="sound_select_checkBox" label="" x="765.24" y="516.73" enabled="true" height="44" width="164"
+		            scaleX="1" scaleY="1" name="sound_select_checkBox">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="164" height="44" x="0" y="0" source="sound_png" />
+					<e:Image width="32" height="32" source="otherSelect_png" x="7" y="6" source.disabled="" source.up=""
+					         source.down="otherSelect_png" />
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+				</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:CheckBox id="all_select_checkBox" label="" x="570.24" y="517.73" enabled="true" height="44" width="164" scaleX="1"
+		            scaleY="1" name="all_select_checkBox">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="164" height="44" x="0" y="0" source="allSel_png" />
+					<e:Image width="32" height="32" source="otherSelect_png" x="7" y="6" source.disabled="" source.up=""
+					         source.down="otherSelect_png" />
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+				</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:CheckBox id="none_select_checkBox" label="" x="960.24" y="516.73" enabled="true" height="44" width="164" scaleX="1"
+		            scaleY="1" name="none_select_checkBox">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="164" height="44" x="0" y="0" source="noSel_png" />
+					<e:Image width="32" height="32" source="otherSelect_png" x="7" y="6" source.disabled="" source.up=""
+					         source.down="otherSelect_png" />
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+				</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Button id="creat_room_button" label="" x="896.24" y="585.73" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="creatButton_png" source.down="creatButton2_png"
+					         source.disabled="禁用状creatButton2_png态资源名" />
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="password_bg_image" width="245" height="49" x="520.24" y="593.73" scaleX="1" scaleY="1"
+		         source="psswordShowBg_png" />
+		<e:BitmapLabel id="password_bitmap_label" width="220" height="48" scaleX="1" scaleY="1" text="123456" y="599.73"
+		               x="540.24" font="passwordCreatRoomFont_fnt"  touchEnabled="false"/>
+	</e:Group>
+	<e:Group id="ddz_group" width="1280" height="720" verticalCenter="0" horizontalCenter="0" visible="false">
+		<e:Image width="1087" height="587" y="103" source="creatRoomBg_ddz_png" x="90" />
+		<e:Group id="player_num_select_group_ddz" width="616" height="60" x="414.33" y="169.36" anchorOffsetX="0"
+		         anchorOffsetY="0" scaleX="1" scaleY="1">
+			<e:layout>
+				<e:HorizontalLayout gap="15" paddingLeft="15" paddingTop="6" />
+			</e:layout>
+		</e:Group>
+		<e:Group id="ju_num_select_group_ddz" width="616" height="60" x="414.33" y="268.12" anchorOffsetX="0"
+		         anchorOffsetY="0" scaleX="1" scaleY="1">
+			<e:layout>
+				<e:HorizontalLayout gap="15" paddingLeft="15" paddingTop="6" />
+			</e:layout>
+			<mySubassemblie:JuNumSelectBtnOfCreatRoom x="42" y="21" value="16">
+				<mySubassemblie:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="juNum_16_png" />
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+						<e:Image width="40" height="39" x="2.33" y="4.33" source="ruleSelect_png" source.up="" source.disabled="" />
+					</e:Skin>
+				</mySubassemblie:skinName>
+			</mySubassemblie:JuNumSelectBtnOfCreatRoom>
+			<mySubassemblie:JuNumSelectBtnOfCreatRoom x="42" y="21" value="20">
+				<mySubassemblie:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="juNum_20_png" />
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+						<e:Image width="40" height="39" x="2.33" y="4.33" source="ruleSelect_png" source.up="" source.disabled="" />
+					</e:Skin>
+				</mySubassemblie:skinName>
+			</mySubassemblie:JuNumSelectBtnOfCreatRoom>
+			<mySubassemblie:JuNumSelectBtnOfCreatRoom x="42" y="21" value="24">
+				<mySubassemblie:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="juNum_24_png" />
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+						<e:Image width="40" height="39" x="2.33" y="4.33" source="ruleSelect_png" source.up="" source.disabled="" />
+					</e:Skin>
+				</mySubassemblie:skinName>
+			</mySubassemblie:JuNumSelectBtnOfCreatRoom>
+		</e:Group>
+		<e:Group id="max_select_group_ddz" width="616" height="60" x="414.33" y="366.6" anchorOffsetX="0" anchorOffsetY="0"
+		         scaleX="1" scaleY="1">
+			<e:layout>
+				<e:HorizontalLayout gap="15" paddingLeft="15" paddingTop="6" />
+			</e:layout>
+			<mySubassemblie:JuNumSelectBtnOfCreatRoom label="" x="102" y="17" value="48">
+				<mySubassemblie:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="bei_48_ddz_png" source.down="bei_48_ddz_png" />
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+						<e:Image width="40" height="39" x="0" y="0" source.down="ruleSelect_png" source="ruleSelect_png" source.up=""
+						         source.disabled="" />
+					</e:Skin>
+				</mySubassemblie:skinName>
+			</mySubassemblie:JuNumSelectBtnOfCreatRoom>
+			<mySubassemblie:JuNumSelectBtnOfCreatRoom label="" x="102" y="17" value="96">
+				<mySubassemblie:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="bei_96_ddz_png" source.down="bei_96_ddz_png" />
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+						<e:Image width="40" height="39" x="0" y="0" source.down="ruleSelect_png" source="ruleSelect_png" source.up=""
+						         source.disabled="" />
+					</e:Skin>
+				</mySubassemblie:skinName>
+			</mySubassemblie:JuNumSelectBtnOfCreatRoom>
+			<mySubassemblie:JuNumSelectBtnOfCreatRoom label="" x="102" y="17" value="192">
+				<mySubassemblie:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="bei_192_ddz_png" source.down="bei_192_ddz_png" />
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+						<e:Image width="40" height="39" x="0" y="0" source.down="ruleSelect_png" source="ruleSelect_png" source.up=""
+						         source.disabled="" />
+					</e:Skin>
+				</mySubassemblie:skinName>
+			</mySubassemblie:JuNumSelectBtnOfCreatRoom>
+		</e:Group>
+		<e:Group id="rule_select_group_ddz" width="616" height="60" x="414.33" y="465.26" anchorOffsetX="0" anchorOffsetY="0"
+		         scaleX="1" scaleY="1">
+			<e:layout>
+				<e:HorizontalLayout gap="15" paddingLeft="15" paddingTop="6" />
+			</e:layout>
+			<mySubassemblie:RuleSelectBtnOfCreatRoom id="show_record_checkBox" label="" x="213" y="19">
+				<mySubassemblie:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="remember_png" source.down="remember_png" />
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+						<e:Image width="40" height="39" x="0" y="0" source.down="ruleSelect_png" source="ruleSelect_png" source.up=""
+						         source.disabled="" />
+					</e:Skin>
+				</mySubassemblie:skinName>
+			</mySubassemblie:RuleSelectBtnOfCreatRoom>
+		</e:Group>
+		<e:Button id="creat_room_button_ddz" label="" x="890.9" y="567.06" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="creatButton_png" source.down="creatButton2_png"
+					         source.disabled="禁用状creatButton2_png态资源名" />
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="password_bg_image_ddz" width="245" height="49" x="416.24" y="575.06" scaleX="1" scaleY="1"
+		         source="psswordShowBg_png" />
+		<e:BitmapLabel id="password_bitmap_label_ddz" width="220" height="48" scaleX="1" scaleY="1" text="123456" y="581.06"
+		               x="436.24" font="passwordCreatRoomFont_fnt"  touchEnabled="false"/>
+	</e:Group>
+	<e:Group id="basis_group" width="0" height="0" horizontalCenter="0" verticalCenter="0">
+		<e:Button id="close_creat_room_button" label="" x="473" y="-260" enabled="true" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="closeButton_png" source.up="closeButton_png"
+					         source.down="closeButton2_png" source.disabled="closeButton2_png" />
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:RadioButton id="ddz_tittle_radioButton" label="" x="-20" y="-310" enabled="true" width="252" height="66" scaleX="1"
+		               scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="togglebg_png" source.down="toggleSel_png" fillMode="clip" y.down="3"
+					         x="5" x.down="0" />
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+					<e:Image width="159" height="43" x="42.91" y="11.5" source="ddzTittle_png" x.disabled="44.91" />
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="dqmj_tittle_radioButton" label="" x="-223.32999999999998" y="-310" enabled="true" width="252"
+		               height="66" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="togglebg_png" source.down="toggleSel_png" y.up="0.38"
+					         source.up="togglebg_png" x.up="5" y.down="2.1" y.disabled="0.4" fillMode="clip" x="5.5" x.down="-4"  y="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+					<e:Image width="159" height="43" x="41" y="9.49" source="dqmjTittle_png" x.disabled="42" />
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+	</e:Group>
+</e:Skin>

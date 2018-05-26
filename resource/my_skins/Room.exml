@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="room" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group id="gameGroup" width="1280" height="720" x="0" y="0" rotation="0">
+		<e:Image width="1280" height="720" x="0" y="0" source="roombg_png"/>
+		<e:Image width="178" height="88" x="0" y="0" source="roomIDbg_png"/>
+		<e:Image width="85" height="131" x="16" y="5.56" scaleX="0.24" scaleY="0.24" source="mjback_png"/>
+		<e:Label id="roomIDLable" text="房号： " x="14" y="42" size="20" anchorOffsetY="0" height="20" anchorOffsetX="0" width="172.33"/>
+		<e:Label id="timeLable" text="时间:   " anchorOffsetX="0" width="145" size="20" fontFamily="Arial" anchorOffsetY="0" height="20" textAlign="left" verticalAlign="middle" y="65" x="14" textColor="0xffffff"/>
+		<e:BitmapLabel id="quanNUm" width="80" height="18" x="70" y="15" text="" textAlign="center" font="quanNum_fnt"/>
+		<e:BitmapLabel id="remainMJCard" width="32" height="18" x="42" y="13" text="" font="quanNum_fnt" textAlign="center"/>
+
+
+		<e:Image width="700" height="27" y="-1" horizontalCenter="46" source="rulesbg_png"/>
+		<e:Label id="MJRulesLable" text="" y="-2" height="27" size="16" verticalAlign="middle" textAlign="center" fontFamily="Times" textColor="0xfffaf0" horizontalCenter="46"/>
+		<e:Group width="65" height="99" x="54" y="97" name="baoCardGroup">
+			<e:Image width="85" height="131" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.76" scaleY="0.76" source="mjback_png"/>
+			<e:Image width="65" height="101" x="8" y="23" anchorOffsetX="0" anchorOffsetY="0" scaleY="0.76" scaleX="0.76" source="mjCard_json.0"/>
+		</e:Group>
+
+
+		<e:Group id="lampGroup" width="113" height="113" anchorOffsetX="56.5" anchorOffsetY="56.5" horizontalCenter="0.5" y="333" touchEnabled="false">
+			<e:Image width="113" height="113" source="fengwei_png" y="56.5" x="56.5" scaleX="1" scaleY="1" anchorOffsetX="56.5" anchorOffsetY="56.5"/>
+			<e:Image id="opImg" width="113" height="113" y="56.5" source="Wlamp_png" x="56.5" scaleX="1" scaleY="1" anchorOffsetX="56.5" anchorOffsetY="56.5" visible="false"/>
+			<e:Image id="upImg" width="113" height="113" source="Nlamp_png" x="56.5" scaleX="1" scaleY="1" y="56.5" anchorOffsetX="56.5" anchorOffsetY="56.5" visible="false"/>
+			<e:Image id="myImg" width="113" height="113" y="56.5" source="Elamp_png" x="56.5" scaleX="1" scaleY="1" anchorOffsetY="56.5" anchorOffsetX="56.5" visible="false"/>
+			<e:Image id="downImg" width="113" height="113" source="Slamp_png" scaleX="1" scaleY="1" x="56.5" y="56.5" anchorOffsetX="56.5" anchorOffsetY="56.5" visible="false"/>
+			<e:BitmapLabel id="countDownLabel" width="25" height="18" text="" scaleX="1" scaleY="1" font="numRoom_fnt" anchorOffsetX="0" anchorOffsetY="0" y="47" x="45"/>
+
+		</e:Group>
+		<e:Group id="sendCardGroup" width="538" height="325" anchorOffsetX="0" anchorOffsetY="0" y="173" x="371">
+			<e:Group id="opSendCardGroup" width="340" height="150" x="100" y="-55"/>
+			<e:Group id="upSendCardGroup" width="150" height="340" x="27" y="-10"/>
+			<e:Group id="mySendCardGroup" width="340" height="150" x="100" y="225"/>
+			<e:Group id="downSendCardGroup" width="150" height="340" x="364" y="-10"/>
+		</e:Group>
+
+
+		<e:Group id="opPlayerGroup" width="278" height="89" x="247" y="8" touchEnabled="false" anchorOffsetX="0">
+			<e:Image width="139" height="67" x="57" y="20" scaleX="1" scaleY="1" source="horbg_png"/>
+			<e:Image width="77" height="77" x="6" y="6" scaleX="1" scaleY="1" source="photobg_png"/>
+			<e:Image id="opPhoto" width="77" height="77" x="6" y="6" scaleX="1" scaleY="1" source=""/>
+			<e:Image width="89" height="89" x="0" y="0" scaleX="1" scaleY="1" touchEnabled="false" source="photoframe_png"/>
+			<e:Image id="opHook" width="84" height="17" x="213" y="3" source="tuoguan_png" rotation="90" visible="false"/>
+			<e:Image id="opBanker" width="58" height="58" x="60.6" y="-8" scaleX="0.8" scaleY="0.8" source="g_zhuang_png" visible="false"/>
+			<e:Label id="opName" text="" y="24.44" size="18" horizontalCenter="4" x="107"/>
+			<e:Label id="opID" text="" y="44.5" size="18" horizontalCenter="4.5" x="112"/>
+			<e:Label id="opJiFen" text="" y="65" size="18" textColor="0xffff00" horizontalCenter="10.5" x="122"/>
+			<e:Image width="24" height="24" x="95" y="61.44" source="jifen_png" visible="false"/>
+			<e:Image id="opchaImg" width="54" height="20" x="219" y="28.4" source="chaikaimengLb_png" visible="false"/>
+			<e:Image id="opPao2Img" width="35" height="20" x="223" y="60" source="pao2Lb_png" visible="false"/>
+			<e:Image id="opPao5Img" width="35" height="20" x="223" y="60" source="pao5Lb_png" visible="false"/>
+
+			<e:Group id="opMJCardGroup" width="467" height="50" x="293" y="29" scaleX="1" scaleY="1">
+
+				<e:layout>
+							<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" gap="-1"/>
+
+				</e:layout>
+			</e:Group>
+			<e:Group id="opMJPengGroup" height="0" y="29" touchEnabled="false" anchorOffsetX="0" width="0" x="360" scaleX="0.45" scaleY="0.45">
+				<e:layout>
+					<e:HorizontalLayout horizontalAlign="right" paddingLeft="0" gap="10"/>
+				</e:layout>
+			</e:Group>
+			<ns1:MJBubble id="opBubble" width="20" height="20" x="104" y="65"/>
+
+		</e:Group>
+		<e:Group id="upPlayerGroup" width="150.5" height="175" x="40" y="246" touchEnabled="false" anchorOffsetX="0">
+			<e:Image width="87" height="154" x="0" y="0" scaleX="1" scaleY="1" source="verbg_png"/>
+			<e:Image width="77" height="77" x="6" y="4" scaleX="1" scaleY="1" source="photobg_png"/>
+			<e:Image id="upPhoto" width="77" height="77" x="6" y="4" scaleX="1" scaleY="1" source=""/>
+			<e:Image width="89" height="89" x="0" y="-2" scaleX="1" scaleY="1" touchEnabled="false" source="photoframe_png"/>
+			<e:Image id="upHook" width="84" height="17" y="156" source="tuoguan_png" x="3" visible="false"/>
+			<e:Image id="upBanker" width="58" height="58" x="61" y="-20" scaleX="0.8" scaleY="0.8" source="g_zhuang_png" visible="false"/>
+			<e:Label id="upName" text="" y="92" size="18" horizontalCenter="-29.25" x="8"/>
+			<e:Label id="upID" text="" y="112" horizontalCenter="-30.75" size="18" x="13"/>
+			<e:Label id="upJiFen" text="" y="133" size="18" textColor="0xffff00" horizontalCenter="-21.75" x="24"/>
+			<e:Image width="24" height="24" x="0" y="130" source="jifen_png" visible="false"/>
+			<e:Image id="upchaImg" width="54" height="20" x="95" y="27" source="chaikaimengLb_png" visible="false"/>
+			<e:Image id="upPao2Img" width="35" height="20" x="97" y="57" source="pao2Lb_png" visible="false"/>
+			<e:Image id="upPao5Img" width="35" height="20" x="97" y="57" source="pao5Lb_png" visible="false"/>
+			<e:Group id="upMJCardGroup" width="20" height="368" x="158" y="-140" scaleX="1" scaleY="1">
+				<e:layout>
+				<e:VerticalLayout gap="-35" horizontalAlign="center" verticalAlign="bottom"/>
+				</e:layout>
+			</e:Group>
+			<e:Group id="upMJPengGroup" width="0" height="0" x="158" y="-157" touchEnabled="false" scaleX="0.4" scaleY="0.4">
+				<e:layout>
+					<e:VerticalLayout gap="5" horizontalAlign="center" verticalAlign="top"/>
+				</e:layout>
+			</e:Group>
+			<ns1:MJBubble id="upBubble" width="20" height="20" x="95" y="14"/>
+
+
+		</e:Group>
+		<e:Group id="myPlayerGroup" width="290" height="89" x="39" y="484" touchEnabled="false">
+			<e:Image width="139" height="67" x="59.000000000000014" y="22" scaleX="1" scaleY="1" source="horbg_png"/>
+			<e:Image width="77" height="77" x="7.000000000000007" y="6.000000000000057" scaleX="1" scaleY="1" source="photobg_png"/>
+			<e:Image id="myPhoto" width="77" height="77" x="7.000000000000007" y="6.000000000000057" scaleX="1" scaleY="1"/>
+			<e:Image width="89" height="89" x="0" y="0" scaleX="1" scaleY="1" touchEnabled="false" source="photoframe_png"/>
+			<e:Image id="myHook" width="84" height="17" x="205" y="70" source="tuoguan_png" visible="false"/>
+			<e:Image id="myBanker" width="58" height="58" x="62.8" y="-23.2" source="g_zhuang_png" scaleX="0.8" scaleY="0.8" visible="false"/>
+			<e:Label id="myName" text="" y="27" size="18" horizontalCenter="0" x="107"/>
+			<e:Label id="myID" text="" y="47" horizontalCenter="0" size="18" x="113"/>
+			<e:Label id="myJiFen" text="" y="67" size="18" textColor="0xffff00" horizontalCenter="12.5" x="125"/>
+			<e:Image width="24" height="24" x="93" y="64" source="jifen_png" visible="false"/>
+			<e:Image id="mychaImg" width="54" height="20" x="214" y="17" source="chaikaimengLb_png" visible="false"/>
+			<e:Image id="myPao2Img" width="35" height="20" x="214" y="45" source="pao2Lb_png" visible="false"/>
+			<e:Image id="myPao5Img" width="35" height="20" x="214" y="45" source="pao5Lb_png" visible="false"/>
+			<e:Group id="myMJCardGroup" width="1105" height="131" x="-28" y="105" scaleX="1" scaleY="1">
+				<e:layout>
+				<e:BasicLayout/>
+				</e:layout>
+			</e:Group>
+
+			<e:Group id="myMJPengGroup" width="0" height="0" x="-28" y="106" anchorOffsetY="0" touchEnabled="false" scaleX="0.9" scaleY="0.9">
+				<e:layout>
+					<e:HorizontalLayout horizontalAlign="left" gap="20" paddingLeft="15"/>
+				</e:layout>
+			</e:Group>
+			<ns1:MJBubble id="myBubble" width="20" height="20" x="113" y="9"/>
+
+		</e:Group>
+		<e:Group id="downPlayerGroup" width="154" height="175" x="1089" y="244" touchEnabled="false" anchorOffsetX="0">
+			<e:Image height="154" x="63.5" width="87" y="2" scaleX="1" scaleY="1" source="verbg_png"/>
+			<e:Image width="77" height="77" x="70" y="6" scaleX="1" scaleY="1" source="photobg_png"/>
+			<e:Image id="downPhoto" width="77" height="77" x="70" y="6" scaleX="1" scaleY="1" source=""/>
+			<e:Image width="89" height="89" x="64" y="0" scaleX="1" scaleY="1" touchEnabled="false" source="photoframe_png"/>
+			<e:Image id="downHook" width="84" height="17" x="66.5" y="158" source="tuoguan_png" scaleX="1" scaleY="1" visible="false"/>
+			<e:Image id="downbanker" width="58" height="58" x="40.6" y="-17" scaleX="0.8" scaleY="0.8" source="g_zhuang_png" visible="false"/>
+			<e:Label id="downName" text="" y="94" size="18" horizontalCenter="34" x="8"/>
+			<e:Label id="downID" text="" y="114" size="18" horizontalCenter="34.5" x="14"/>
+			<e:Label id="downJiFen" text="" y="135" size="18" textColor="0xffff00" horizontalCenter="39.5" x="22"/>
+			<e:Image width="24" height="24" x="63.5" y="132" source="jifen_png" visible="false"/>
+			<e:Image id="downchaImg" width="54" height="20" x="3" y="29" source="chaikaimengLb_png" visible="false"/>
+			<e:Image id="downPao2Img" width="35" height="20" x="5" y="60" source="pao2Lb_png" visible="false"/>
+			<e:Image id="downPao5Img" width="35" height="20" x="5" y="60" source="pao5Lb_png" visible="false"/>
+			<e:Group id="downMJCardGroup" width="20" height="368" x="-27" y="-154" scaleX="1" scaleY="1">
+				<e:layout>
+				<e:VerticalLayout horizontalAlign="center" verticalAlign="top" gap="-35"/>
+				</e:layout>
+			</e:Group>
+			<e:Group id="downMJPengGroup" width="0" height="0" x="-37" y="-100" touchEnabled="false" scaleX="0.4" scaleY="0.4">
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="center" verticalAlign="bottom"/>
+				</e:layout>
+			</e:Group>
+			<ns1:MJBubble id="downBubble" width="49" height="52" x="61" y="22" skewX="0" skewY="0" anchorOffsetX="49" anchorOffsetY="0"/>
+
+
+		</e:Group>
+		<e:Group id="setingBtnGroup" width="110" height="200" x="1142.5" y="0" anchorOffsetX="0" touchEnabled="false">
+			<e:Button label="" y="10" width="90" height="38" horizontalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="set_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button label="" y="42" width="90" height="38" horizontalCenter="-3">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="chat_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button label="" y="149" width="90" height="38" horizontalCenter="0">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="location_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button label="" y="100" width="90" height="38" horizontalCenter="2">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="voice_png" source.down="novoice_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+
+
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center" paddingTop="10" gap="10"/>
+			</e:layout>
+		</e:Group>
+
+		<e:Group id="mjActionGroup" width="800" height="145" x="1100" y="440" anchorOffsetX="675.88" anchorOffsetY="0" touchThrough="false" visible="false">
+
+
+
+			<e:layout>
+				<e:HorizontalLayout paddingLeft="0" horizontalAlign="right" verticalAlign="middle" paddingRight="20" gap="55"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="paoGroup" width="940" height="100" y="469" anchorOffsetX="0" x="172" touchEnabled="false" visible="false">
+			<e:Button id="pao2Btn" label="" x="10" y="29" width="250" height="100" name="pao2">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="pao2btn_png" source.down="pao2btn1_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="pao5Btn" label="" x="139" y="43" width="250" height="100" name="pao5">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="pao5btn_png" source.down="pao5btn1_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="mjpaocancleBtn" label="" x="6" y="64" width="250" height="100" name="guo">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="guoBtn_png" source.down="guoBtn1_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="50"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="chakaimengGroup" width="880" height="100" anchorOffsetY="0" horizontalCenter="0" y="465" touchEnabled="false" visible="false">
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="80"/>
+			</e:layout>
+			<e:Button id="chaikaimenBtn" label="" x="218" y="34" width="250" height="100" name="cha">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="chakaimeng_png" source.down="chakaimeng1_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="mjchaikaimenBtn" label="" x="553" y="15" height="100" width="250">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="guoBtn_png" source.down="guoBtn1_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="mjHostGroup" width="1280" height="372" bottom="0" horizontalCenter="0" visible="false">
+			<e:Image width="1280" height="372" x="47.5" y="-9" source="hostbg_png"/>
+			<e:Button id="mjCancleHostBtn" label="" y="200" horizontalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mjcancelHost_png" source.down="mjcancelHost1_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="pengTypeGroup" width="1006.06" height="73.64" x="236" y="487.18" anchorOffsetY="0" anchorOffsetX="0" touchEnabled="false"/>
+
+
+
+
+		<e:Group id="tipsGroup" width="1010" height="122" horizontalCenter="0" y="282" visible="false">
+			<e:Image id="lianzhuangTips" width="1010" height="122" horizontalCenter="0" verticalCenter="0" source="zhuangTips_png" visible="false"/>
+			<e:Image id="huanbaoTips" width="1010" height="122" horizontalCenter="0" verticalCenter="0" source="huanbaoTips_png" visible="false"/>
+		</e:Group>
+		<e:Group id="effectBtnResGroup" width="65.15" height="59.09" x="556" y="394" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+			<e:Button id="guoBtn" label="" x="56" y="100" name="guo" enabled="true" visible="false">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mjAction_json.guo" source.down="mjAction_json.guo1" source.disabled="mjAction_json.guo1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="chiBtn" label="" x="17" y="39" name="chi" enabled="true" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mjAction_json.chi" source.down="mjAction_json.chi1" source.disabled="mjAction_json.chi1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="pengBtn" label="" x="5" y="56" name="peng" enabled="true" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mjAction_json.peng" source.down="mjAction_json.peng1" source.disabled="mjAction_json.peng1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="tingBtn" label="" y="62" name="ting" enabled="true" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mjAction_json.ting" source.down="mjAction_json.ting1" source.disabled="mjAction_json.ting1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="huBtn" label="" x="36" y="68" name="hu" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mjAction_json.hu" source.down="mjAction_json.hu1" source.disabled="mjAction_json.hu1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="gangBtn" label="" x="32" y="79" name="gang" enabled="true" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mjAction_json.gang" source.down="mjAction_json.gang1" source.disabled="mjAction_json.gang1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="zhantingBtn" label="" x="55" y="42" name="zhanting" enabled="true" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mjAction_json.zhanting" source.down="mjAction_json.zhanting1" source.disabled="mjAction_json.zhanting1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="chitingBtn" label="" x="24" y="44" name="chiting" enabled="true" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mjAction_json.chiting" source.down="mjAction_json.chiting1" source.disabled="mjAction_json.chiting1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="gangtingBtn" label="" x="33" y="32" name="gangting" enabled="true" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mjAction_json.gangting" source.down="mjAction_json.gangting1" source.disabled="mjAction_json.gangting1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="zhiduiBtn" label="" x="24" y="77" name="zhidui" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mjAction_json.zhidui" source.down="mjAction_json.zhidui1" source.disabled="mjAction_json.zhidui1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="pengtingBtn" label="" x="11" y="94" name="pengting" enabled="true" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="mjAction_json.pengting" source.down="mjAction_json.pengting1" source.disabled="mjAction_json.pengting1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+
+		</e:Group>
+		<e:Group id="paomadengGroup" width="430.66" height="29.34" x="423.67" y="136" anchorOffsetY="0" anchorOffsetX="0" visible="false">
+			<e:Image width="407" height="25" y="3" horizontalCenter="0" source="scrollLampBG_png" x="13.330000000000041" scaleX="1" scaleY="1" visible="false"/>
+			<e:Label id="paoMaDengLable" text="" x="856" y="3" size="25" textColor="0xd62c2c" scaleX="1" scaleY="1"/>
+			<e:Rect id="paomadengMask" width="407" height="25" x="13" y="3" scaleX="1" scaleY="1" fillColor="0x0d384f"/>
+			<e:Label id="paoMaDengLable1" text="" x="856" y="45" size="25" textColor="0x931111"/>
+		</e:Group>
+
+
+
+
+
+
+
+
+	</e:Group>
+
+</e:Skin>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DDZRoom" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ddz="ddz.*">
+	<w:Declarations>
+	</w:Declarations>
+	<w:Config id="162cd23f510"/>
+	<e:Image id="ddz_room_bg" width="1280" height="720" x="0" y="0" source="ddz_room_bg_png"/>
+	<e:Image id="ddz_di_pai_bg" width="404" height="95" x="438" y="0" source="ddz_di_pai_bg_png"/>
+	<e:Label id="ddz_player_name_label" text="爱抹茶的多肉" x="141" y="685" fontFamily="SimSun" bold="true" size="26" textAlign="center" verticalAlign="middle" textColor="0x5df716"/>
+	<e:Label id="ddz_player_gold_label" text="248651" x="440" y="685" verticalAlign="middle" textAlign="center" width="178" height="29" size="26" textColor="0xf9d77f" bold="true"/>
+	<e:Group id="ddz_operation_group_call_dz" width="851" height="90" x="214.5" y="370">
+		<e:Button id="ddz_btn_call_dz_no" label="" x="150" y="0" scaleX="1" scaleY="1" width="217" height="90">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ddz_btn_call_dz_normal_png" source.disabled="ddz_btn_call_dz_disable_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="ddz_btn_call_dz" label="" x="484" y="0" scaleX="1" scaleY="1" width="217" height="90">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ddz_btn_call_normal_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Group id="ddz_operation_group_op_card" width="851" height="90" x="214.5" y="370" anchorOffsetX="0" alpha="1">
+		<e:Button id="ddz_op_bu_chu" label="" x="0" y="0" scaleX="1" scaleY="1">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ddz_btn_call_dcard_normal_png" source.down="ddz_btn_call_dcard_selected_png" source.disabled="ddz_btn_call_dcard_disable_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="ddz_op_ti_shi" label="" x="317" y="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ddz_btn_card_tip_normal_png" source.down="ddz_btn_card_tip_selected_png" source.disabled="ddz_btn_card_tip_disable_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="ddz_op_chu_pai" label="" x="634" y="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ddz_btn_card_normal_png" source.down="ddz_btn_card_selected_png" source.disabled="ddz_btn_card_disable_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Group id="ddz_operation_group_call_score" width="851" height="90" x="214.5" y="370">
+		<e:Button id="ddz_btn_call_dz_score_no" label="" x="0" y="0" width="217" height="90">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ddz_btn_call_dz_normal_png" source.disabled="ddz_btn_call_dz_disable_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="ddz_btn_call_dz_score_1" label="" x="212" y="0" width="217" height="90">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ddz_btn_call1_normal_png" source.disabled="ddz_btn_call1_disable_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="ddz_btn_call_dz_score_2" label="" x="423" y="0" width="217" height="90">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ddz_btn_call2_normal_png" source.disabled="ddz_btn_call2_disable_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="ddz_btn_call_dz_score_3" label="" x="636" y="0" width="217" height="90">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ddz_btn_call3_normal_png" source.disabled="ddz_btn_call3_disable_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Group id="ddz_send_card_effect_group1" width="800" height="140" x="240" y="150" scaleX="1" scaleY="1" anchorOffsetY="0"/>
+	<e:Group id="ddz_send_card_effect_group2" width="800" height="140" x="240" y="150">
+	</e:Group>
+	<e:Group id="ddz_hand_card_group" width="1280" height="192" x="0" y="472" anchorOffsetX="0">
+	</e:Group>
+	<e:Group id="ddz_left_card_group" width="81" height="115.2" x="-81" y="0"/>
+	<e:Group id="ddz_right_card_group" width="81" height="115.2" x="1280" y="0"/>
+	<e:Button id="ddz_btn_record" label="" x="1040" y="644.56" scaleX="1" scaleY="1" width="69" height="70">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ddz_bt_record_normal_png" source.down="ddz_bt_record_select_png" source.disabled="ddz_bt_record_disable_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="ddz_room_time_label" text="18:53" x="1118" y="680.48" width="150" height="30" verticalAlign="middle" textAlign="center" size="26" textColor="0xffffff" bold="true"/>
+	<e:Button id="ddz_btn_chat" label="" x="1216.32" y="334.12" width="67" height="112">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ddz_bt_chat_normal_png" source.down="ddz_bt_chat_selected_png" source.disabled="ddz_bt_chat_disable_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="ddz_btn_spread" label="" x="1203.28" y="-2.96" width="77" height="49">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ddz_bt_spread_normal_png" source.down="ddz_bt_spread_disable_png" source.disabled="ddz_bt_spread_disable_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group id="ddz_room_info" width="200" height="52" x="32.17" y="17.2">
+		<e:Label id="ddz_room_name_label" text="房间号：" x="0" y="0" scaleX="1" scaleY="1" height="26" size="26" bold="true"/>
+		<e:Label id="ddz_room_id_label" text="124566" x="100" y="0" size="26" scaleX="1" scaleY="1" height="26" width="100" verticalAlign="middle" textAlign="left"/>
+		<e:Label id="ddz_room_name_label0" text="最大倍数：" x="0" y="26" scaleX="1" scaleY="1" height="26" size="26" bold="true"/>
+		<e:Label id="ddz_room_id_label0" text="96倍" x="133" y="26" size="26" scaleX="1" scaleY="1" height="26" width="67" verticalAlign="middle" textAlign="left"/>
+	</e:Group>
+	<e:Group id="ddz_rule_info" width="510" height="26" x="420" y="90">
+		<e:Label id="ddz_jushu_num_label" text="局数:" x="0" y="0" height="26" size="26" verticalAlign="middle" textAlign="left" bold="true" width="70"/>
+		<e:Label id="ddz_jushu_num" text="16/16" x="70" y="0" size="26" width="100" height="26" textAlign="left" verticalAlign="middle" bold="true"/>
+		<e:Label id="ddz_difen_num_label" text="底分:" x="170" y="0" height="26" size="26" verticalAlign="middle" textAlign="left" bold="true" width="70"/>
+		<e:Label id="ddz_difen_num" text="100" x="240" y="0" size="26" width="100" height="26" textAlign="left" verticalAlign="middle" bold="true"/>
+		<e:Label id="ddz_double_num_label" text="倍数:" x="340" y="0" height="26" size="26" verticalAlign="middle" textAlign="left" bold="true" width="70"/>
+		<e:Label id="ddz_double_num" text="100" x="410" y="0" size="26" width="100" height="26" textAlign="left" verticalAlign="middle" bold="true"/>
+	</e:Group>
+	<e:Group id="ddz_dipai_group" width="224" height="65" x="528" y="5.67">
+		<e:Image id="ddz_card_back0" width="48" height="65" x="0" y="0" source="ddz_card_back_png" scaleX="1" scaleY="1"/>
+		<e:Image id="ddz_card_back1" width="48" height="65" x="88" y="0" source="ddz_card_back_png" scaleX="1" scaleY="1"/>
+		<e:Image id="ddz_card_back2" width="48" height="65" x="176" y="0" source="ddz_card_back_png" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="ddz_record_group" width="676" height="129" x="302" y="561" visible="false">
+		<e:Image id="ddz_record_board" width="676" height="129" x="0" y="0" scaleX="1" scaleY="1" source="ddz_record_board_png" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Label id="ddz_record_board_label0" text="0" x="51.28" y="59.04" width="20" verticalAlign="middle" textAlign="center"/>
+		<e:Label text="0" x="92.22" y="59.04" id="ddz_record_board_label1" width="20" verticalAlign="middle" textAlign="center"/>
+		<e:Label text="0" x="133.16" y="59.04" id="ddz_record_board_label2" width="20" verticalAlign="middle" textAlign="center"/>
+		<e:Label text="0" x="174.1" y="59.04" id="ddz_record_board_label3" width="20" verticalAlign="middle" textAlign="center"/>
+		<e:Label text="0" x="215.04" y="59.04" id="ddz_record_board_label4" width="20" verticalAlign="middle" textAlign="center"/>
+		<e:Label text="0" x="255.98" y="59.04" id="ddz_record_board_label5" width="20" verticalAlign="middle" textAlign="center"/>
+		<e:Label text="0" x="296.92" y="59.04" id="ddz_record_board_label6" width="20" verticalAlign="middle" textAlign="center"/>
+		<e:Label text="0" x="337.86" y="59.04" id="ddz_record_board_label7" width="20" verticalAlign="middle" textAlign="center"/>
+		<e:Label text="0" x="378.8" y="59.04" id="ddz_record_board_label8" width="20" verticalAlign="middle" textAlign="center"/>
+		<e:Label text="0" x="419.74" y="59.04" id="ddz_record_board_label9" width="20" verticalAlign="middle" textAlign="center"/>
+		<e:Label text="0" x="460.68" y="59.04" id="ddz_record_board_label10" width="20" verticalAlign="middle" textAlign="center"/>
+		<e:Label text="0" x="501.62" y="59.04" id="ddz_record_board_label11" width="20" verticalAlign="middle" textAlign="center"/>
+		<e:Label text="0" x="542.56" y="59.04" id="ddz_record_board_label12" width="20" verticalAlign="middle" textAlign="center"/>
+		<e:Label text="0" x="583.5" y="59.04" id="ddz_record_board_label13" width="20" verticalAlign="middle" textAlign="center"/>
+		<e:Label text="0" x="624.44" y="59.04" id="ddz_record_board_label14" width="20" verticalAlign="middle" textAlign="center"/>
+	</e:Group>
+	<e:Group id="ddz_clock_group" width="60" height="66" x="610" y="304" visible="false">
+		<e:Image id="ddz_timer_bg" width="60" height="66" x="0" y="0" source="ddz_timer_bg_png" scaleX="1" scaleY="1"/>
+		<e:Label id="ddz_clock_time_label" text="15" x="0" y="3.1" textColor="0xBF0D0D" bold="true" textAlign="center" verticalAlign="middle" scaleX="1" scaleY="1" width="60" height="66"/>
+	</e:Group>
+	<e:Group id="ddz_clock_group0" width="60" height="66" x="260" y="167" visible="false">
+		<e:Image id="ddz_timer_bg0" width="60" height="66" x="0" y="0" source="ddz_timer_bg_png" scaleX="1" scaleY="1"/>
+		<e:Label id="ddz_clock_time_label0" text="15" x="0" y="3.1" textColor="0xBF0D0D" bold="true" textAlign="center" verticalAlign="middle" scaleX="1" scaleY="1" width="60" height="66"/>
+	</e:Group>
+	<e:Group id="ddz_clock_group1" width="60" height="66" x="960" y="167" visible="false">
+		<e:Image id="ddz_timer_bg1" width="60" height="66" x="0" y="0" source="ddz_timer_bg_png" scaleX="1" scaleY="1"/>
+		<e:Label id="ddz_clock_time_label1" text="15" x="0" y="3.1" textColor="0xBF0D0D" bold="true" textAlign="center" verticalAlign="middle" scaleX="1" scaleY="1" width="60" height="66"/>
+	</e:Group>
+	<e:Component width="230" height="210" x="0" y="300" skinName="DDZPlayerInfo" visible="false"/>
+	<e:Component width="230" height="210" x="1050" y="77" skinName="DDZPlayerInfo" visible="false"/>
+	<e:Component width="230" height="210" x="0" y="77" skinName="DDZPlayerInfo" visible="false"/>
+</e:Skin>

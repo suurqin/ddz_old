@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Login" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1620986923a"/>
+	<e:Group id="LoginGroup" width="800" height="480" verticalCenter="0" horizontalCenter="0">
+		<e:Group id="LoginAccountGroup" width="800" height="480" verticalCenter="0" horizontalCenter="0">
+			<e:Image id="LoginAccountBg" width="800" height="480" fillMode="scale" source="LoginBg_2_png" horizontalCenter="0" verticalCenter="0" x="1" y="-2" scaleX="1" scaleY="1"/>
+			<e:Button id="BackBtn" label="" x="720" y="20" width="57" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="back_png" source.down="back1_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+
+
+			</e:Button>
+			<e:CheckBox id="KeepPassword" label="" width="34" height="30" x="489" y="355" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="RadioBtn_png" source.down="RightFlag_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:CheckBox>
+			<e:Button id="LoginBtn" label="" x="492" y="248" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="LoginBtn_1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:TextInput id="CountInput" width="198" height="37" x="271" y="246" anchorOffsetX="1" anchorOffsetY="1" maxChars="15" touchEnabled="true" skinName="skins.TextInputSkin" scaleX="1" scaleY="1" text="521147"/>
+			<e:TextInput id="PasswordInput" width="198" height="37" x="271" y="287" displayAsPassword="true" maxChars="15" scaleX="1" scaleY="1" text="521147"/>
+			<e:Button id="QuickLoginBtn" label="" x="350" y="350" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="QuickLogin_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="FindPasswordBtn" label="" x="200" y="350" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="findPassword_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="LoginSelectGroup" width="800" height="480" horizontalCenter="0" verticalCenter="0">
+			<e:Image id="LoginSelectBg" width="800" height="480" source="selectbg1_png" x="0" y="0" scaleX="1" scaleY="1" fillMode="repeat"/>
+			<e:Button id="AccountBtn" label="" verticalCenter="131" y="318" scaleX="1" scaleY="1" horizontalCenter="0">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="accountbtn_png" source.down="accountbtn1_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="MinLoginBtn" label="" y="260" width="248" height="85" horizontalCenter="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="MinLoginBtn_png" source.down="MinLoginBtn1_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="RadioPng" width="31" height="27" x="305" y="415" source="RadioBtn_png"/>
+			<e:CheckBox id="RadioCek" label="" x="305" y="415" width="31" height="27">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="RadioBtn_png" source.down="RightFlag_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:CheckBox>
+			<e:Button id="AgreeBtn" label="" x="336" y="415">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="agreement_png" source.down="agreement_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+	</e:Group>
+	<e:Group width="1280" height="720" x="0" y="0" visible="false">
+		<e:Image width="1280" height="720" x="0" y="0" source="loginbg_png"/>
+		<e:Image width="1280" height="720" x="0" y="0" source="xiaoguologin_png"/>
+		<e:Button label="" y="429" width="342" height="107" x="477">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="Wxlogin_png" source.down="Wxlogin2_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image width="258" height="36" x="537" y="652" source="protocol_png"/>
+		<e:Image width="46" height="45" x="477.5" y="646" source="agree2_png"/>
+		<e:CheckBox label="" x="477.5" y="646" width="46" height="45">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="agree2_png" source.down="agree1_png" y.disabled="-2.01" x.disabled="-2.67" y.up="0" x.up="0" y.down="5.36" x.down="5.36" x="0" y="0" width.down="80%" height.down="80%"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+	</e:Group>
+</e:Skin>

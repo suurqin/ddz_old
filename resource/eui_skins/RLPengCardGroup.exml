@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RLPengCardGroupSkin" width="103" height="212" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="162d3426f47" ></w:Config>
+	<ns1:RLMJCard id="MJCard3" width="102" height="93" x="0" y="2"/>
+
+	<ns1:RLMJCard id="MJCard2" width="102" height="93" x="0" y="62"/>
+	<ns1:RLMJCard id="MJCard4" width="102" height="93" x="0" y="31"/>
+	<ns1:RLMJCard id="MJCard1" width="102" height="93" x="0" y="122" scaleX="1" scaleY="1"/>
+
+</e:Skin>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RLHandCardSkin" width="41" height="118" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="162d36b1e47" ></w:Config>
+		<e:Image id="cardbg" width="41" height="118" x="20.5" y="59" source="side_png" anchorOffsetX="20.5" anchorOffsetY="59" skewY="0"/>
+</e:Skin>

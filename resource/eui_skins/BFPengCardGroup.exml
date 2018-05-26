@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BFPengCardGroupSkin" width="243" height="148" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="162d3351ece" ></w:Config>
+	<ns1:BFMJCard id="MJCard1" width="81" height="118" x="0" y="30"/>
+	<ns1:BFMJCard id="MJCard2" width="81" height="118" x="81" y="30"/>
+	<ns1:BFMJCard id="MJCard3" width="81" height="118" x="162" y="30"/>
+	<ns1:BFMJCard id="MJCard4" width="81" height="118" x="81" y="0"/>>
+</e:Skin>

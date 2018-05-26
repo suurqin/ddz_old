@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AreaSelectBtnOfCreatRoomSkin" states="up,disabled,down,upAndSelected,downAndSelected,disabledAndSelected"
+        xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Group width="196" height="64">
+        <e:Image id="areaSelectBtnOfCreatRoom_image" fillMode="scale" alpha="1" alpha.disabled="0.5" alpha.down="0.7"
+                 source.upAndSelected="dqst_png" source.downAndSelected="dqst_png"
+                 source.disabledAndSelected="dqst1_png" source="dqst1_png" width="196" height="64" y="4" x="2"/>
+        <e:Image width="0" height="0" x="0" y="0" source=""/>
+        <e:Label id="labelDisplay" size="20" textColor="0x707070" textAlign="center" verticalAlign="middle" fontFamily="Tahoma" />
+    </e:Group>
+    <w:Config id="162b3c55a29"></w:Config>
+</e:Skin>

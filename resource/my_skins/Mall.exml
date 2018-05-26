@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="mall" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="1280" height="720" x="0" y="0" source="blackmask_png"/>
+
+	<e:Group id="goldGroup" width="1122" height="622" verticalCenter="0" horizontalCenter="0" visible="false">
+		<e:Button id="gLeBtn" label="" x="245" y="-4">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="le_btn2_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="gCardBtn" label="" x="437" y="-4" scaleX="1" scaleY="1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="card_btn2_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image width="1114" height="573" source="bg0_png" y="49" scaleX="1" scaleY="1" horizontalCenter="0"/>
+		<e:Image width="236" height="69" x="619" y="-4" source="gold_btn1_png"/>
+	</e:Group>
+	<e:Group id="leGroup" width="1122" height="622" y="49" horizontalCenter="0">
+		<e:Button id="lGoldBtn" label="" x="619" y="-4">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="gold_btn2_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="lCardBtn" label="" y="-4" x="437">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="card_btn2_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Image width="1114" height="573" y="49" x="4" source="bg0_png"/>
+		<e:Image width="248" height="69" x="255" y="-4" source="le_btn1_png"/>
+	</e:Group>
+	<e:Group id="cardGroup" verticalCenter="0" width="1122" horizontalCenter="0">
+		<e:Button id="cGoldBtn" label="" x="619" y="-4">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="gold_btn2_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="cLeBtn" label="" x="245" y="-4">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="le_btn2_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Image width="1114" height="573" source="bg0_png" y="49" scaleX="1" scaleY="1" x="4"/>
+		<e:Image width="249" height="69" y="-4" source="card_btn1_png" horizontalCenter="0.5"/>
+
+	</e:Group>
+	<e:Button id="closeBtn" label="" x="1120" y="95" scaleX="1" scaleY="1">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="close1_png" source.down="close2_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:BitmapLabel id="lebiNumLabel" width="120" height="25" x="440" anchorOffsetX="0" anchorOffsetY="0" text="10000" font="numMall_fnt" y="592" textAlign="center"/>
+	<e:BitmapLabel id="roomCardNumlabel" width="100" height="25" x="715" y="592" text="234" font="numMall_fnt" textAlign="center"/>
+	<e:BitmapLabel id="goldNumlabel" width="120" height="25" x="956" y="592" font="numMall_fnt" text="10000" textAlign="center"/>
+	<e:Scroller width="1040" height="364" x="120" y="180" scrollPolicyH="on">
+		<e:Group id="goodsGroup" width="1040">
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" paddingLeft="0" gap="80"/>
+			</e:layout>
+
+
+
+		</e:Group>
+	</e:Scroller>
+
+</e:Skin>

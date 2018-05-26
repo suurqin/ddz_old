@@ -1,0 +1,108 @@
+{
+  "global": {
+    "globalAutoLayerMarkEnable": false
+  },
+  "162b3b02def": {
+    "guideLinesEnabled": true,
+    "guideLines": [
+      {
+        "type": "h",
+        "pos": 227
+      }
+    ]
+  },
+  "162bcd1cc03": {
+    "path": "..\\resource\\my_skins\\LobbyMainLayer.ts",
+    "class": "LobbyMainLayer",
+    "parentPath": ""
+  },
+  "162bda691da": {
+    "path": "..\\resource\\mySubassemblie\\PlayerNumSelectBtnOfCreatRoom.ts",
+    "class": "PlayerNumSelectBtnOfCreatRoom",
+    "parentPath": "resource/eui_skins/RadioButtonSkin.exml"
+  },
+  "162cc523436": {
+    "path": "..\\resource\\my_skins\\EnterRoomLayer.ts",
+    "class": "EnterRoomLayer",
+    "parentPath": ""
+  },
+  "162d2d9aee9": {
+    "path": "..\\resource\\my_skins\\BFCard.ts",
+    "class": "BFCard",
+    "parentPath": ""
+  },
+  "162d2e26e34": {
+    "path": "..\\resource\\components\\MJCard.ts",
+    "class": "MJCard",
+    "parentPath": ""
+  },
+  "162d2e8d06b": {
+    "path": "..\\resource\\components\\operationcard.ts",
+    "class": "operationcard",
+    "parentPath": ""
+  },
+  "162d316d235": {
+    "path": "..\\resource\\components\\BFMJCard.ts",
+    "class": "BFMJCard",
+    "parentPath": ""
+  },
+  "162d31fbd64": {
+    "path": "..\\resource\\components\\BFPengCard.ts",
+    "class": "BFPengCard",
+    "parentPath": ""
+  },
+  "162d33064e4": {
+    "path": "..\\resource\\components\\BFMJCard.ts",
+    "class": "BFMJCard",
+    "parentPath": ""
+  },
+  "162d3351ece": {
+    "path": "manager\\BFPengCardGroup.ts",
+    "class": "BFPengCardGroup",
+    "parentPath": ""
+  },
+  "162d3426f47": {
+    "path": "manager\\RLPengCardGroup.ts",
+    "class": "RLPengCardGroup",
+    "parentPath": ""
+  },
+  "162d34c3d0d": {
+    "path": "manager\\RLMJCard.ts",
+    "class": "RLMJCard",
+    "parentPath": ""
+  },
+  "162d36b1e47": {
+    "path": "manager\\RLHandCard.ts",
+    "class": "RLHandCard",
+    "parentPath": ""
+  },
+  "162d868bf1a": {
+    "path": "manager\\MsgBubbleSkin.ts",
+    "class": "MsgBubbleSkin",
+    "parentPath": ""
+  },
+  "162d88c10f9": {
+    "path": "manager\\MsgButton.ts",
+    "class": "MsgButton",
+    "parentPath": ""
+  },
+  "162d88d1110": {
+    "path": "manager\\MsgBubble.ts",
+    "class": "MsgBubble",
+    "parentPath": ""
+  },
+  "162e0c4a32f": {
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": 100
+  },
+  "162fa3a02cb": {
+    "path": "manager\\mSlider.ts",
+    "class": "mSlider",
+    "parentPath": ""
+  }
+}

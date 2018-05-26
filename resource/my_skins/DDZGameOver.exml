@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DDZGameOver" width="947" height="560" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="ddz_game_over_group" width="947" height="560" x="0" y="0">
+		<e:Image id="ddz_game_over_bg" width="947" height="515" x="0" y="45" source="ddz_game_over_bg_png" scaleX="1" scaleY="1"/>
+		<e:Image id="ddz_game_over_title_bg" width="308" height="61" x="319.5" y="25" source="ddz_game_over_title_bg_png" scaleX="1" scaleY="1"/>
+		<e:Image id="ddz_game_over_title" width="218" height="64" x="364.5" y="8.669999999999998" source="ddz_game_over_title_png" scaleX="1" scaleY="1"/>
+		<e:Group id="ddz_game_over_no1" width="280" height="320" x="334" y="98" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image id="ddz_game_over_star1" width="89" height="92" x="95.5" y="0" source="ddz_game_over_star1_png"/>
+			<e:Image id="ddz_player_icon_1" width="76" height="76" x="26.04" y="118.71" source="logo6_png"/>
+			<e:Image id="ddz_game_over_frame1" width="98" height="98" x="18" y="110" source="ddz_game_over_frame1_png"/>
+			<e:Label id="ddz_player_id_1" text="ID:454655" x="130" y="124.98" size="20" height="20" bold="false" width="150" verticalAlign="middle" textAlign="left" textColor="0xc47c3c"/>
+			<e:Label id="ddz_player_name_1" text="爱抹茶的多肉" x="130" y="156.33" size="20" height="20" bold="false" width="150" verticalAlign="middle" textAlign="left" textColor="0xc47c3c"/>
+			<e:Label id="ddz_player_gold_1" text="666" x="130" y="185.98" height="22" size="22" width="150" verticalAlign="middle" textAlign="left" bold="true" textColor="0xc47c3c"/>
+			<e:Label id="ddz_player_score_1" text="+48" x="0" y="243.34" width="280" size="50" verticalAlign="middle" textAlign="center" textColor="0xc47c3c" height="50"/>
+		</e:Group>
+		<e:Group id="ddz_game_over_no2" width="280" height="320" x="39.99" y="98" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image id="ddz_game_over_star0" width="89" height="92" x="95.5" y="0" source="ddz_game_over_star2_png"/>
+			<e:Image id="ddz_player_icon_0" width="76" height="76" x="26.04" y="118.71" source="logo6_png"/>
+			<e:Image id="ddz_game_over_frame0" width="98" height="98" x="18" y="110" source="ddz_game_over_frame2_png"/>
+			<e:Label id="ddz_player_id_0" text="ID:454655" x="130" y="124.98" size="20" height="20" bold="false" width="150" verticalAlign="middle" textAlign="left" textColor="0xC47C3C"/>
+			<e:Label id="ddz_player_name_0" text="爱抹茶的多肉" x="130" y="156.33" size="20" height="20" bold="false" width="150" verticalAlign="middle" textAlign="left" textColor="0xC47C3C"/>
+			<e:Label id="ddz_player_gold_0" text="666" x="130" y="185.98" height="22" size="22" width="150" verticalAlign="middle" textAlign="left" bold="true" textColor="0xC47C3C"/>
+			<e:Label id="ddz_player_score_0" text="+48" x="0" y="243.34" width="280" size="50" verticalAlign="middle" textAlign="center" textColor="0xC47C3C" height="50"/>
+		</e:Group>
+		<e:Group id="ddz_game_over_no3" width="280" height="320" x="628.65" y="98" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image id="ddz_game_over_star2" width="89" height="92" x="95.5" y="0" source="ddz_game_over_star3_png"/>
+			<e:Image id="ddz_player_icon_2" width="76" height="76" x="26.04" y="118.71" source="logo6_png"/>
+			<e:Image id="ddz_game_over_frame2" width="98" height="98" x="18" y="110" source="ddz_game_over_frame3_png"/>
+			<e:Label id="ddz_player_id_2" text="ID:454655" x="130" y="124.98" size="20" height="20" bold="false" width="150" verticalAlign="middle" textAlign="left" textColor="0xC47C3C"/>
+			<e:Label id="ddz_player_name_2" text="爱抹茶的多肉" x="130" y="156.33" size="20" height="20" bold="false" width="150" verticalAlign="middle" textAlign="left" textColor="0xC47C3C"/>
+			<e:Label id="ddz_player_gold_2" text="666" x="130" y="185.98" height="22" size="22" width="150" verticalAlign="middle" textAlign="left" bold="true" textColor="0xC47C3C"/>
+			<e:Label id="ddz_player_score_2" text="+48" x="0" y="243.34" width="280" size="50" verticalAlign="middle" textAlign="center" textColor="0xC47C3C" height="50"/>
+		</e:Group>
+		<e:Button id="ddz_btn_share" label="" x="372" y="439.72" width="203" height="80">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ddz_btn_share_normal_png" source.disabled="ddz_btn_share_disable_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

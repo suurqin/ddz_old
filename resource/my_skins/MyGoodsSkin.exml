@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MyCell" width="242" height="364" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="242" height="364" anchorOffsetX="0" anchorOffsetY="0" source="bg_png" verticalCenter="0" horizontalCenter="0"/>
+	<e:Image id="itemTitle" width="200" height="50" y="37" horizontalCenter="0" source="{data.title}" anchorOffsetY="25" anchorOffsetX="100"/>
+	<e:Image id="itemImage" width="180" height="180" source="{data.image}" horizontalCenter="0" anchorOffsetX="90" anchorOffsetY="90" y="165" scale9Grid="0,0,0,0"/>
+
+	<e:Button id="buyBtn" label="" y="309.5" width="177" height="75" horizontalCenter="1.5" anchorOffsetY="37.5" anchorOffsetX="88.5">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="{data.btn}"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

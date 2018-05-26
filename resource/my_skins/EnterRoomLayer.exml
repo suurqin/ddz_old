@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EnterRoomLayerSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="162cc523436" ></w:Config>
+	<e:Image id="bg_enter_room_image" width="1136" height="618" y="53" source="bg_enterRoom_png" horizontalCenter="0"/>
+	<e:Image width="344" height="431.34" x="126.68" y="157.02" source="bg2_enterRoom_png" scale9Grid="40,48,245,289" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Button id="close_enter_room_button" label="" x="1135.69" y="39.05" width="82" height="83">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="closeButton_png" source.down="closeButton2_png" source.disabled="closeButton2_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:BitmapLabel id="room_id_enter_room_bitmapLabel" width="426.02" height="46.38" x="552.66" y="174.72" anchorOffsetX="0" anchorOffsetY="0" text="  1  2  3  4  5  6" includeInLayout="true" font="passwordCreatRoomFont_fnt" scaleX="1.3" scaleY="1.3" textAlign="left"/>
+	<e:Group id="input_list_enter_room_group" width="520" height="306.12" x="584.01" y="242.69" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Button id="num_1_enter_room_button" label="" x="109" y="60" width="157" height="70" name="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="1_enterRoom_png" source.down="1_2_enterRoom_png" source.disabled="1_2_enterRoom_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="num_2_enter_room_button" label="" x="109" y="60" width="157" height="70" name="2">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="2_enterRoom_png" source.down="2_2_enterRoom_png" source.disabled="2_2_enterRoom_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="num_3_enter_room_button" label="" x="109" y="60" width="157" height="70" name="3">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="3_enterRoom_png" source.down="3_2_enterRoom_png" source.disabled="3_2_enterRoom_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="num_4_enter_room_button" label="" x="109" y="60" width="157" height="70" name="4">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="4_enterRoom_png" source.down="4_2_enterRoom_png" source.disabled="4_2_enterRoom_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="num_5_enter_room_button" label="" x="109" y="60" width="157" height="70" name="5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="5_enterRoom_png" source.down="5_2_enterRoom_png" source.disabled="5_2_enterRoom_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="num_6_enter_room_button" label="" x="109" y="60" width="157" height="70" name="6">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="6_enterRoom_png" source.down="6_2_enterRoom_png" source.disabled="6_2_enterRoom_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="num_7_enter_room_button" label="" x="109" y="60" width="157" height="70" name="7">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="7_enterRoom_png" source.down="7_2_enterRoom_png" source.disabled="7_2_enterRoom_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="num_8_enter_room_button" label="" x="109" y="60" width="157" height="70" name="8">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="8_enterRoom_png" source.down="8_2_enterRoom_png" source.disabled="8_2_enterRoom_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="num_9_enter_room_button" label="" x="109" y="60" width="157" height="70" name="9">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="9_enterRoom_png" source.down="9_2_enterRoom_png" source.disabled="9_2_enterRoom_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="clear_all_enter_room_button" label="" x="109" y="60" width="157" height="70" name="c">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="clearAll_enterRoom_png" source.down="clearAll_2_enterRoom_png" source.disabled="clearAll_2_enterRoom_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="num_0_enter_room_button" label="" x="109" y="60" width="157" height="70" name="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="0_enterRoom_png" source.down="0_2_enterRoom_png" source.disabled="0_2_enterRoom_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="delect_enter_room_button" label="" x="109" y="60" width="157" height="70" name="d">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="delect_enterRoom_png" source.down="delect_2_enterRoom_png" source.disabled="delect_2_enterRoom_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:layout>
+			<e:TileLayout orientation="rows" horizontalAlign="center" verticalAlign="middle" horizontalGap="12" verticalGap="8" paddingRight="0" paddingTop="0" paddingLeft="0"/>
+		</e:layout>
+	</e:Group>
+	<e:Button id="cancle_enter_room_button" label="" x="912.84" y="557.93">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cancle_enterRoom_png" source.down="cancle2_enterRoom_png" source.disabled="cancle2_enterRoom_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="join_enter_room_button" label="" x="575.34" y="557.93">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="joinRoomButton_enterRoom_png" source.down="joinRoomButton2_enterRoom_png" source.disabled="joinRoomButton2_enterRoom_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="room_basic_info_enter_room_label" text="二人麻将\n房间局数：24局\n已进人数：1人" x="126.7" y="187.52" anchorOffsetX="0" width="274.79" anchorOffsetY="0" height="86.96" fontFamily="KaiTi" size="30" textColor="0xce6006" verticalAlign="middle" textAlign="left"/>
+	<e:Label id="id_list_enter_room_label" text="ID:123456\nID:123456\nID:123456\nID:123456" x="330.7" y="283.67" anchorOffsetX="0" width="135.99" anchorOffsetY="0" height="115.34" fontFamily="KaiTi" size="28" textColor="0xce6006" verticalAlign="top" textAlign="right"/>
+	<e:Label id="name_list_enter_room_label" text="房主:一二三四\n玩家1:一二三四\n玩家2:一二三四\n玩家3:一二三四" x="126.52" y="283.67" anchorOffsetX="0" anchorOffsetY="0" height="115.33" fontFamily="KaiTi" size="28" verticalAlign="top" textAlign="left" textColor="0xce6006"/>
+	<e:Group id="rule_llist_enter_room_group" width="367.93" height="145.31" x="125.46" y="432.67" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Label text="红中满天" x="90" y="33" textColor="0xce6006" size="23" verticalAlign="middle" textAlign="left" fontFamily="KaiTi"/>
+		<e:Label text="红中满天飞" x="90" y="33" textColor="0xce6006" size="23" verticalAlign="middle" textAlign="left" fontFamily="KaiTi"/>
+		<e:Label text="红中满天飞" x="90" y="33" textColor="0xce6006" size="23" verticalAlign="middle" textAlign="left" fontFamily="KaiTi"/>
+		<e:Label text="红中满天飞" x="90" y="33" textColor="0xce6006" size="23" verticalAlign="middle" textAlign="left" fontFamily="KaiTi"/>
+		<e:Label text="红中满天飞" x="90" y="33" textColor="0xce6006" size="23" verticalAlign="middle" textAlign="left" fontFamily="KaiTi"/>
+		<e:Label text="红中满天飞" x="90" y="33" textColor="0xce6006" size="23" verticalAlign="middle" textAlign="left" fontFamily="KaiTi"/>
+		<e:Label text="红中满天飞" x="90" y="33" textColor="0xce6006" size="23" verticalAlign="middle" textAlign="left" fontFamily="KaiTi"/>
+		<e:Label text="红中满天飞" x="90" y="33" size="23" verticalAlign="middle" textAlign="left" textColor="0xce6006" fontFamily="KaiTi"/>
+		<e:Label text="红中满天飞" x="90" y="33" textColor="0xce6006" size="23" verticalAlign="middle" textAlign="left" fontFamily="KaiTi"/>
+		<e:Label text="红中满天飞" x="90" y="33" textColor="0xce6006" size="23" verticalAlign="middle" textAlign="left" fontFamily="KaiTi"/>
+		<e:Label text="红中满天飞" x="90" y="33" textColor="0xce6006" size="23" verticalAlign="middle" textAlign="left" fontFamily="KaiTi"/>
+		<e:Label text="红中满天飞" x="90" y="33" textColor="0xce6006" size="23" verticalAlign="middle" textAlign="left" fontFamily="KaiTi"/>
+		<e:layout>
+			<e:TileLayout verticalGap="10" horizontalAlign="left" verticalAlign="top" paddingBottom="0" paddingTop="5" horizontalGap="2"/>
+		</e:layout>
+	</e:Group>
+	<e:RadioButton id="player_num_4_enter_room_radioButton" label="" x="1120.33" y="403.66" anchorOffsetX="0" width="70" height="250" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+	<e:Image width="70" height="250" x="0" y="0" source="toggleDi_enterRoom_png" source.up=""/>
+	<e:Image width="70" height="250" x="0" y="0" source="toggleSel_enterRoom_png" source.up="toggleDi_enterRoom_png" x.up="0" x.down="0" x.disabled="0" source.disabled=""/>
+			<e:Image width="32" height="82" source.down="roomID2011_enterRoom_png" source.disabled="roomID2011a_enterRoom_png" x="20" y="80" source="roomID2011_enterRoom_png" source.up="roomID2011a_enterRoom_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+	</e:RadioButton>
+	<e:RadioButton id="player_num_3_enter_room_radioButton" label="" x="1120.33" y="258.34" anchorOffsetX="0" width="70" height="250" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+	<e:Image width="70" height="250" x="0" y="0" source="toggleDi_enterRoom_png" source.up=""/>
+	<e:Image width="70" height="250" x="0" y="0" source="toggleSel_enterRoom_png" source.up="toggleDi_enterRoom_png" x.up="0" x.down="0" x.disabled="0" source.disabled=""/>
+			<e:Image width="32" height="82" source.down="roomID2010_enterRoom_png" source.disabled="roomID2010a_enterRoom_png" x="20" y="80" source="roomID2010_enterRoom_png" source.up="roomID2010a_enterRoom_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+	</e:RadioButton>
+	<e:RadioButton id="player_num_2_enter_room_radioButton" label="" x="1120.33" y="110.35" anchorOffsetX="0" width="70" height="250" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+	<e:Image width="70" height="250" x="0" y="0" source="toggleDi_enterRoom_png" source.up=""/>
+	<e:Image width="70" height="250" x="0" y="0" source="toggleSel_enterRoom_png" source.up="toggleDi_enterRoom_png" x.up="0" x.down="0" x.disabled="0" source.disabled=""/>
+			<e:Image width="32" height="82" source.down="roomID2009_enterRoom_png" source.disabled="roomID2009a_enterRoom_png" x="20" y="80" source="roomID2009_enterRoom_png" source.up="roomID2009a_enterRoom_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+	</e:RadioButton>
+</e:Skin>
